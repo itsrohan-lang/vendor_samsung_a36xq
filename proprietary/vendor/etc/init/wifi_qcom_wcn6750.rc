@@ -1,0 +1,79 @@
+on post-fs-data
+    # for boot_wlan
+	chown wifi wifi /sys/kernel/icnss/wpss_boot
+	chmod 0640 /sys/kernel/icnss/wpss_boot
+
+    # for WIFI qcwlanstate
+    chown wifi wifi /sys/wifi/qcwlanstate
+    chmod 0644 /sys/wifi/qcwlanstate
+
+    chown wifi wifi /sys/wifi/wifiver
+    chmod 0640 /sys/wifi/wifiver
+    chown wifi wifi /sys/wifi/softap
+    chmod 0640 /sys/wifi/softap
+    chown wifi wifi /sys/wifi/memdump
+    chmod 0644 /sys/wifi/memdump
+    mkdir /data/vendor/log/wifi/ramdump 0771 wifi system
+
+    # for WIFI TRP/TIS
+    chown wifi wifi /data/vendor/conn/.psm.info
+    chmod 0644 /data/vendor/conn/.psm.info
+    chown wifi wifi /sys/wifi/pm
+    chmod 0640 /sys/wifi/pm
+
+    # for WIFI Antenna Selection
+    chown wifi wifi /data/vendor/conn/.ant.info
+    chmod 0644 /data/vendor/conn/.ant.info
+    chown wifi wifi /sys/wifi/ant
+    chmod 0640 /sys/wifi/ant
+    
+# for Wi-Fi SSR
+service vendor.wpss_ssr_enable /vendor/bin/ssr_setup wpss_only 1
+     user root
+     oneshot
+     disabled
+
+service vendor.wpss_ssr_disable /vendor/bin/ssr_setup wpss_only 0
+     user root
+     oneshot
+     disabled
+
+on property:vendor.wlan.ramdump_mode=0
+    start vendor.wpss_ssr_enable
+    setprop persist.vendor.ssr.enable_ramdumps 0
+
+on property:vendor.wlan.ramdump_mode=2
+    start vendor.wpss_ssr_enable
+    setprop persist.vendor.ssr.enable_ramdumps 1
+
+on property:vendor.wlan.ramdump_mode=3
+    start vendor.wpss_ssr_disable
+
+on property:sys.boot_completed=1
+    chown wifi wifi /sys/module/qca_cld3_qca6750/parameters/fwpath
+    chmod 0644 /sys/module/qca_cld3_qca6750/parameters/fwpath
+    chown wifi wifi /sys/module/qca_cld3_qca6750/parameters/con_mode
+    chmod 0644 /sys/module/qca_cld3_qca6750/parameters/con_mode
+    chown wifi wifi /sys/module/qca_cld3_adrastea/parameters/fwpath
+    chmod 0644 /sys/module/qca_cld3_adrastea/parameters/fwpath
+    chown wifi wifi /sys/module/qca_cld3_adrastea/parameters/con_mode
+    chmod 0644 /sys/module/qca_cld3_adrastea/parameters/con_mode	
+	
+on property:wifi.active.interface=wlan0 && property:ro.boot.debug_level=0x494d
+    write /sys/class/net/wlan0/unit_test_target "4 2 12 3"
+
+on property:wifi.active.interface=wlan0 && property:ro.boot.debug_level=0x4948
+    write /sys/class/net/wlan0/unit_test_target "4 2 12 3"
+
+on property:wifi.active.interface=swlan0 && property:ro.boot.debug_level=0x494d
+    write /sys/class/net/wlan0/unit_test_target "4 2 12 3"
+
+on property:wifi.active.interface=swlan0 && property:ro.boot.debug_level=0x4948
+    write /sys/class/net/wlan0/unit_test_target "4 2 12 3"
+
+on boot
+# for wlan FTM app
+service ftm_ptt /system/bin/ftm_ptt -d
+    user root
+    group radio system
+    disabled

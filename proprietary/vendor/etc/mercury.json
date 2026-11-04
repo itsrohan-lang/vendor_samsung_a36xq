@@ -1,0 +1,660 @@
+{
+    "virtual": [
+        {
+            "name": "FCAM",
+            "type": "camera",
+            "base": "USB",
+            "offset": 80.0,
+            "Et": 0.264
+        },
+        {
+            "name": "VAP",
+            "type": "virtual",
+            "main": "AP",
+            "Et": 0.2
+        },
+        {
+            "name": "VPA",
+            "type": "virtual",
+            "main": "PA",
+            "Et": 0.1
+        },
+        {
+            "name": "VWIFI",
+            "type": "virtual",
+            "main": "WIFI",
+            "Et": 0.1
+        },
+        {
+            "name": "UPSPK",
+            "type": "audio",
+            "key": "g_hw_speaker_amp_temp_rcv",
+            "refer": "LRPTHM",
+            "w": 0.3,
+            "Et": 0.15
+        },
+        {
+            "name": "DNSPK",
+            "type": "audio",
+            "key": "g_hw_speaker_amp_temp_spk",
+            "refer": "USB",
+            "w": 0.3,
+            "Et": 0.15
+        }
+    ],
+    "lrp": [
+        {
+            "name": "APT",
+            "weights": [
+                {
+                    "name": "BAT",
+                    "coef": 0.7014,
+                    "scale": 32.261,
+                    "mean": 331.7378
+                },
+                {
+                    "name": "USB",
+                    "coef": -0.5723,
+                    "scale": 28.4074,
+                    "mean": 327.1558
+                },
+                {
+                    "name": "CHG",
+                    "coef": 0.2317,
+                    "scale": 53.3797,
+                    "mean": 400.5051
+                },
+                {
+                    "name": "LRPTHM",
+                    "coef": 0.3089,
+                    "scale": 56.503,
+                    "mean": 402.4577
+                },
+                {
+                    "name": "VAP",
+                    "coef": 0.3829,
+                    "scale": 69.9211,
+                    "mean": 419.5147
+                },
+                {
+                    "name": "VPA",
+                    "coef": -0.2908,
+                    "scale": 59.5654,
+                    "mean": 399.3122
+                },
+                {
+                    "name": "VWIFI",
+                    "coef": 0.2508,
+                    "scale": 57.5522,
+                    "mean": 396.0763
+                }
+            ],
+            "intercept": {
+                "coef": -0.0,
+                "scale": 4.2122,
+                "mean": 36.6867
+            }
+        },
+        {
+            "name": "MEMF",
+            "weights": [
+                {
+                    "name": "BAT",
+                    "coef": 0.794,
+                    "scale": 32.261,
+                    "mean": 331.7378
+                },
+                {
+                    "name": "USB",
+                    "coef": -0.6046,
+                    "scale": 28.4074,
+                    "mean": 327.1558
+                },
+                {
+                    "name": "CHG",
+                    "coef": 0.3381,
+                    "scale": 53.3797,
+                    "mean": 400.5051
+                },
+                {
+                    "name": "LRPTHM",
+                    "coef": 0.2065,
+                    "scale": 56.503,
+                    "mean": 402.4577
+                },
+                {
+                    "name": "VAP",
+                    "coef": 0.3288,
+                    "scale": 69.9211,
+                    "mean": 419.5147
+                },
+                {
+                    "name": "VPA",
+                    "coef": -0.3697,
+                    "scale": 59.5654,
+                    "mean": 399.3122
+                },
+                {
+                    "name": "VWIFI",
+                    "coef": 0.3291,
+                    "scale": 57.5522,
+                    "mean": 396.0763
+                }
+            ],
+            "intercept": {
+                "coef": 0.0,
+                "scale": 4.1002,
+                "mean": 36.3952
+            }
+        },
+        {
+            "name": "WIFIF",
+            "weights": [
+                {
+                    "name": "BAT",
+                    "coef": 0.4514,
+                    "scale": 32.261,
+                    "mean": 331.7378
+                },
+                {
+                    "name": "USB",
+                    "coef": -0.3864,
+                    "scale": 28.4074,
+                    "mean": 327.1558
+                },
+                {
+                    "name": "CHG",
+                    "coef": 0.1419,
+                    "scale": 53.3797,
+                    "mean": 400.5051
+                },
+                {
+                    "name": "LRPTHM",
+                    "coef": 0.3141,
+                    "scale": 56.503,
+                    "mean": 402.4577
+                },
+                {
+                    "name": "VAP",
+                    "coef": 0.3186,
+                    "scale": 69.9211,
+                    "mean": 419.5147
+                },
+                {
+                    "name": "VPA",
+                    "coef": -0.0865,
+                    "scale": 59.5654,
+                    "mean": 399.3122
+                },
+                {
+                    "name": "VWIFI",
+                    "coef": 0.2565,
+                    "scale": 57.5522,
+                    "mean": 396.0763
+                }
+            ],
+            "intercept": {
+                "coef": 0.0,
+                "scale": 4.2473,
+                "mean": 36.7171
+            }
+        },
+        {
+            "name": "CHGF",
+            "weights": [
+                {
+                    "name": "BAT",
+                    "coef": 0.888,
+                    "scale": 32.261,
+                    "mean": 331.7378
+                },
+                {
+                    "name": "USB",
+                    "coef": -0.6362,
+                    "scale": 28.4074,
+                    "mean": 327.1558
+                },
+                {
+                    "name": "CHG",
+                    "coef": 0.4402,
+                    "scale": 53.3797,
+                    "mean": 400.5051
+                },
+                {
+                    "name": "LRPTHM",
+                    "coef": 0.0948,
+                    "scale": 56.503,
+                    "mean": 402.4577
+                },
+                {
+                    "name": "VAP",
+                    "coef": 0.2727,
+                    "scale": 69.9211,
+                    "mean": 419.5147
+                },
+                {
+                    "name": "VPA",
+                    "coef": -0.3902,
+                    "scale": 59.5654,
+                    "mean": 399.3122
+                },
+                {
+                    "name": "VWIFI",
+                    "coef": 0.3598,
+                    "scale": 57.5522,
+                    "mean": 396.0763
+                }
+            ],
+            "intercept": {
+                "coef": 0.0,
+                "scale": 4.0336,
+                "mean": 36.0574
+            }
+        },
+        {
+            "name": "PAF",
+            "weights": [
+                {
+                    "name": "BAT",
+                    "coef": 0.4151,
+                    "scale": 32.261,
+                    "mean": 331.7378
+                },
+                {
+                    "name": "USB",
+                    "coef": -0.358,
+                    "scale": 28.4074,
+                    "mean": 327.1558
+                },
+                {
+                    "name": "CHG",
+                    "coef": 0.152,
+                    "scale": 53.3797,
+                    "mean": 400.5051
+                },
+                {
+                    "name": "LRPTHM",
+                    "coef": 0.312,
+                    "scale": 56.503,
+                    "mean": 402.4577
+                },
+                {
+                    "name": "VAP",
+                    "coef": 0.2887,
+                    "scale": 69.9211,
+                    "mean": 419.5147
+                },
+                {
+                    "name": "VPA",
+                    "coef": 0.0134,
+                    "scale": 59.5654,
+                    "mean": 399.3122
+                },
+                {
+                    "name": "VWIFI",
+                    "coef": 0.1867,
+                    "scale": 57.5522,
+                    "mean": 396.0763
+                }
+            ],
+            "intercept": {
+                "coef": 0.0,
+                "scale": 4.244,
+                "mean": 36.7206
+            }
+        },
+        {
+            "name": "APR",
+            "weights": [
+                {
+                    "name": "BAT",
+                    "coef": 0.1089,
+                    "scale": 31.4652,
+                    "mean": 335.9987
+                },
+                {
+                    "name": "USB",
+                    "coef": -0.0431,
+                    "scale": 27.8034,
+                    "mean": 332.2583
+                },
+                {
+                    "name": "CHG",
+                    "coef": 0.007,
+                    "scale": 50.1255,
+                    "mean": 401.3321
+                },
+                {
+                    "name": "LRPTHM",
+                    "coef": 0.6135,
+                    "scale": 53.5489,
+                    "mean": 403.3455
+                },
+                {
+                    "name": "VAP",
+                    "coef": 0.3551,
+                    "scale": 67.0438,
+                    "mean": 421.3821
+                },
+                {
+                    "name": "VPA",
+                    "coef": -0.3152,
+                    "scale": 61.5448,
+                    "mean": 404.0321
+                },
+                {
+                    "name": "VWIFI",
+                    "coef": 0.2893,
+                    "scale": 58.828,
+                    "mean": 400.4135
+                }
+            ],
+            "intercept": {
+                "coef": 0.0,
+                "scale": 4.1543,
+                "mean": 36.9232
+            }
+        },
+        {
+            "name": "MEMR",
+            "weights": [
+                {
+                    "name": "BAT",
+                    "coef": 0.1312,
+                    "scale": 31.4652,
+                    "mean": 335.9987
+                },
+                {
+                    "name": "USB",
+                    "coef": -0.0392,
+                    "scale": 27.8034,
+                    "mean": 332.2583
+                },
+                {
+                    "name": "CHG",
+                    "coef": 0.0926,
+                    "scale": 50.1255,
+                    "mean": 401.3321
+                },
+                {
+                    "name": "LRPTHM",
+                    "coef": 0.6198,
+                    "scale": 53.5489,
+                    "mean": 403.3455
+                },
+                {
+                    "name": "VAP",
+                    "coef": 0.3193,
+                    "scale": 67.0438,
+                    "mean": 421.3821
+                },
+                {
+                    "name": "VPA",
+                    "coef": -0.4249,
+                    "scale": 61.5448,
+                    "mean": 404.0321
+                },
+                {
+                    "name": "VWIFI",
+                    "coef": 0.3211,
+                    "scale": 58.828,
+                    "mean": 400.4135
+                }
+            ],
+            "intercept": {
+                "coef": 0.0,
+                "scale": 4.0976,
+                "mean": 36.859
+            }
+        },
+        {
+            "name": "WIFIR",
+            "weights": [
+                {
+                    "name": "BAT",
+                    "coef": 0.0319,
+                    "scale": 31.4652,
+                    "mean": 335.9987
+                },
+                {
+                    "name": "USB",
+                    "coef": -0.023,
+                    "scale": 27.8034,
+                    "mean": 332.2583
+                },
+                {
+                    "name": "CHG",
+                    "coef": -0.081,
+                    "scale": 50.1255,
+                    "mean": 401.3321
+                },
+                {
+                    "name": "LRPTHM",
+                    "coef": 0.4511,
+                    "scale": 53.5489,
+                    "mean": 403.3455
+                },
+                {
+                    "name": "VAP",
+                    "coef": 0.1386,
+                    "scale": 67.0438,
+                    "mean": 421.3821
+                },
+                {
+                    "name": "VPA",
+                    "coef": 0.1357,
+                    "scale": 61.5448,
+                    "mean": 404.0321
+                },
+                {
+                    "name": "VWIFI",
+                    "coef": 0.3561,
+                    "scale": 58.828,
+                    "mean": 400.4135
+                }
+            ],
+            "intercept": {
+                "coef": 0.0,
+                "scale": 4.0459,
+                "mean": 36.385
+            }
+        },
+        {
+            "name": "CHGR",
+            "weights": [
+                {
+                    "name": "BAT",
+                    "coef": 0.2165,
+                    "scale": 31.4652,
+                    "mean": 335.9987
+                },
+                {
+                    "name": "USB",
+                    "coef": -0.067,
+                    "scale": 27.8034,
+                    "mean": 332.2583
+                },
+                {
+                    "name": "CHG",
+                    "coef": 0.2426,
+                    "scale": 50.1255,
+                    "mean": 401.3321
+                },
+                {
+                    "name": "LRPTHM",
+                    "coef": 0.494,
+                    "scale": 53.5489,
+                    "mean": 403.3455
+                },
+                {
+                    "name": "VAP",
+                    "coef": 0.2801,
+                    "scale": 67.0438,
+                    "mean": 421.3821
+                },
+                {
+                    "name": "VPA",
+                    "coef": -0.4648,
+                    "scale": 61.5448,
+                    "mean": 404.0321
+                },
+                {
+                    "name": "VWIFI",
+                    "coef": 0.3283,
+                    "scale": 58.828,
+                    "mean": 400.4135
+                }
+            ],
+            "intercept": {
+                "coef": 0.0,
+                "scale": 3.9527,
+                "mean": 36.5642
+            }
+        },
+        {
+            "name": "PAR",
+            "weights": [
+                {
+                    "name": "BAT",
+                    "coef": -0.0202,
+                    "scale": 31.4652,
+                    "mean": 335.9987
+                },
+                {
+                    "name": "USB",
+                    "coef": 0.0306,
+                    "scale": 27.8034,
+                    "mean": 332.2583
+                },
+                {
+                    "name": "CHG",
+                    "coef": -0.1414,
+                    "scale": 50.1255,
+                    "mean": 401.3321
+                },
+                {
+                    "name": "LRPTHM",
+                    "coef": 0.5232,
+                    "scale": 53.5489,
+                    "mean": 403.3455
+                },
+                {
+                    "name": "VAP",
+                    "coef": 0.1937,
+                    "scale": 67.0438,
+                    "mean": 421.3821
+                },
+                {
+                    "name": "VPA",
+                    "coef": 0.1734,
+                    "scale": 61.5448,
+                    "mean": 404.0321
+                },
+                {
+                    "name": "VWIFI",
+                    "coef": 0.2525,
+                    "scale": 58.828,
+                    "mean": 400.4135
+                }
+            ],
+            "intercept": {
+                "coef": 0.0,
+                "scale": 4.0797,
+                "mean": 36.4699
+            }
+        },
+        {
+            "name" : "RCV",
+            "weights" : [
+                {
+                    "name": "USB",
+                    "coef": 0.154,
+                    "scale": 31.1174,
+                    "mean": 350.8344
+                },
+                {
+                   "name": "LRPTHM",
+                   "coef": 0.0964,
+                   "scale": 57.0972,
+                   "mean": 413.3772
+               },
+               {
+                    "name": "UPSPK",
+                    "coef": 0.7909,
+                    "scale": 70.0711,
+                    "mean": 523.534
+               }
+            ],
+            "intercept" : {
+                "coef": 0.0,
+                "scale": 4.191,
+                "mean": 43.2049
+            }
+        },
+        {
+            "name" : "SPK",
+            "weights" : [
+                {
+                    "name": "USB",
+                    "coef": 0.6077,
+                    "scale": 31.1174,
+                    "mean": 350.8344
+                },
+                {
+                    "name": "LRPTHM",
+                    "coef": -0.1351,
+                    "scale": 57.0972,
+                    "mean": 413.3772
+                },
+                {
+                    "name": "DNSPK",
+                    "coef": 0.5773,
+                    "scale": 54.4226,
+                    "mean": 482.6787
+                }
+            ],
+            "intercept" : {
+                "coef": 0.0,
+                "scale": 3.0237,
+                "mean": 38.2505
+            }
+        }
+    ],
+    "aggregation": [
+        {
+            "rep": "CF",
+            "type": "flash",
+            "candidates": [ "LRPTHM" ]
+        },
+        {
+            "rep": "LRF",
+            "type": "unknown",
+            "candidates": [ "APT", "CHGF", "MEMF", "WIFIF", "PAF" ]
+        },
+        {
+            "rep": "LRB",
+            "type": "unknown",
+            "candidates": [ "APR", "CHGR", "MEMR", "WIFIR", "PAR" ]
+        },
+        {
+            "rep": "LRP",
+            "type": "unknown",
+            "candidates": [ "LRF", "LRB" ]
+        },
+        {
+            "rep": "SKINF",
+            "type": "unknown",
+            "candidates": [ "LRF" ]
+        },
+        {
+            "rep": "SKINB",
+            "type": "unknown",
+            "candidates": [ "LRB" ]
+        },
+        {
+            "rep": "SKIN",
+            "type": "skin",
+            "candidates": [ "SKINF", "SKINB" ]
+        }
+    ]
+}

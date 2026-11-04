@@ -1,0 +1,15 @@
+{
+  "config": {
+    "hw_platform": ["MTP", "Dragon", "Surf", "HDK", "IDP", "QRD", "IOT"],
+    "soc_id": ["663"]
+  },
+  "sns_mx_cal_config": {
+    "owner": "sns_mx_cal",
+    "magnetization_th": {"type": "flt","ver": "0",
+      "data": "200.0"
+    },
+    "sample_rate": { "type": "flt", "ver": "0",
+      "data": "50.0"
+    }
+  }
+}

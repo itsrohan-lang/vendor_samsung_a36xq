@@ -1,0 +1,28 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD", "MTP", "Surf", "RCM"],
+    "soc_id": ["663"]
+  },
+  "stk31610_0":{
+    "owner": "sns_stk31610",
+    ".ambient_light":{
+      "owner": "sns_stk31610",
+      ".config":{
+        "owner": "sns_stk31610",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }	
+  }
+}

@@ -1,0 +1,44 @@
+# For Sensordebug in *#31597#
+
+service sensor_copy_registry /vendor/bin/init.vendor.sensordebug.sh copy_registry
+    user system
+    group system
+    oneshot
+    disabled
+
+on property:sys.sensordebug_enable=true
+    start sensor_copy_registry
+
+on property:persist.vendor.ssr.sns_ssr_dump=on && property:persist.sys.sensors.fssr_dump=true
+#    write /sys/class/remoteproc/remoteproc${vendor.sensorfirmware_index}/recovery "enabled"
+    write /sys/class/remoteproc/remoteproc${vendor.sensorfirmware_index}/coredump "enabled"
+    write /sys/class/sensors/ssc_core/sns_crash 2
+
+on property:persist.vendor.ssr.sns_ssr_dump=off
+    write /sys/module/qcom_ramdump/parameters/enable_dump_collection 0
+#    write /sys/class/remoteproc/remoteproc1/recovery "disabled"
+    write /sys/class/remoteproc/remoteproc1/coredump "disabled"
+
+on property:persist.vendor.ssr.sns_ssr_dump=complete
+    write /sys/class/sensors/ssc_core/sns_crash 4
+
+on property:persist.sys.sensors.fssr_ignore=true
+    write /sys/class/sensors/ssc_core/sns_crash 5
+
+on property:persist.sys.sensors.fssr_ignore=false
+    write /sys/class/sensors/ssc_core/sns_crash 6
+
+on property:sys.factory.runningFactoryApp=true
+    write /sys/class/sensors/ssc_core/sns_crash 11
+
+on property:sys.factory.runningFactoryApp=false
+    write /sys/class/sensors/ssc_core/sns_crash 10
+
+on property:dev.gnss.silentloggingIssueTracker=ON
+    setprop persist.vendor.ssr.sns_ssr_dump on
+
+on property:dev.gnss.silentloggingIssueTracker=OFF
+    setprop persist.vendor.ssr.sns_ssr_dump off
+
+on property:sys.sensor.trigger_ssr=true
+    write /sys/kernel/boot_adsp/ssr 1

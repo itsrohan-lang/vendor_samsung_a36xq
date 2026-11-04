@@ -1,0 +1,742 @@
+{
+  "Resources": [
+    {
+      "Name": "CPULittleMaxFreq",
+      "Formula": "x / 1000",
+      "Handler": "qc",
+      "FreqTablePath": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies",
+      "BoostPath": "0x40804100",
+      "DefaultValue": "100#"
+    },
+    {
+      "Name": "CPULittleMinFreq",
+      "Formula": "x / 1000",
+      "Handler": "qc",
+      "FreqTablePath": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies",
+      "BoostPath": "0x40800100",
+      "DefaultValue": "0#"
+    },
+    {
+      "Name": "CPUBigMaxFreq",
+      "FreqTablePath" : "/sys/devices/system/cpu/cpu4/cpufreq/scaling_available_frequencies"
+    },
+    {
+      "Name": "CPUBigMinFreq",
+      "FreqTablePath" : "/sys/devices/system/cpu/cpu4/cpufreq/scaling_available_frequencies"
+    },
+    {
+      "Name": "CPUMaxFreq",
+      "FreqTablePath" : "/sys/devices/system/cpu/cpufreq_limit/cpufreq_table",
+      "BoostPath" : "/sys/devices/system/cpu/cpufreq_limit/cpufreq_max_limit",
+      "HighFreqLimitNum": "0",
+      "LowFreqLimitNum": "0"
+    },
+    {
+      "Name": "CPUMinFreq",
+      "FreqTablePath" : "/sys/devices/system/cpu/cpufreq_limit/cpufreq_table",
+      "BoostPath" : "/sys/devices/system/cpu/cpufreq_limit/cpufreq_min_limit",
+      "HighFreqLimitNum": "0",
+      "LowFreqLimitNum": "0"
+    },    
+    {
+      "Name": "DDRMaxFreq",
+      "FreqTablePath": "/sys/devices/system/cpu/bus_dcvs/DDR/available_frequencies",
+      "BoostPath" : "/sys/devices/system/cpu/bus_dcvs/DDR/soc:qcom,memlat:ddr:gold/max_freq"
+    },
+    {
+      "Name": "DDRMinFreq",
+      "Handler" : "sysfs",
+      "FreqTablePath" : "/sys/devices/system/cpu/bus_dcvs/DDR/available_frequencies",
+      "BoostPath": "/sys/devices/system/cpu/bus_dcvs/DDR/memlat/adaptive_high_freq"
+    },
+    {
+      "Name": "DDRMinFreqLow",
+      "ID" : "0x30001011",
+      "Handler" : "sysfs",
+      "FreqTablePath" : "/sys/devices/system/cpu/bus_dcvs/DDR/available_frequencies",
+      "BoostPath": "/sys/devices/system/cpu/bus_dcvs/DDR/memlat/adaptive_low_freq",
+      "DefaultValue": "0#",
+      "Priority": "high"
+    },
+    {
+      "Name": "GPUMinFreq",
+      "DefaultValue": "295"
+    },
+    {
+      "Name": "CoreNumBigMin",
+      "Values": [
+        "3","2"
+      ]
+    },
+    {
+      "Name": "TABoost",
+      "BoostPath" : "/dev/cpuctl/top-app/cpu.uclamp.min"
+    },
+    {
+      "Name": "Memboost",
+      "ID": "0x60002001",
+      "Handler": "sysfs",
+      "BoostPath": "/sys/kernel/sec_mm/mem_boost_mode",
+      "DefaultValue": "-1",
+      "Priority": "high",
+      "MaxValue": "3",
+      "MinValue": "-1"
+    },
+    {
+      "Name": "UCLAMP_MIN_BOOST",
+      "ID" : "0x12004001",
+      "Handler": "uclamp",
+      "BoostPath": "sched_setattr_min",
+      "Priority" : "high",
+      "Values": [
+        "512","459","407","328","236","200","145","0"
+      ],
+      "Tids" : "true"
+    },
+    {
+      "Name": "TID_LOW_LATENCY",
+      "ID": "0x12004003",
+      "Handler" : "qc",
+      "FreqTablePath": "",
+      "BoostPath": "0x40CD0000",
+      "DefaultValue": "0",
+      "Priority" : "high",
+      "MaxValue" : "1",
+      "MinValue" : "0",
+      "Tids" : "true",
+      "Option" : [
+        "0x42C28000", "1"
+      ]
+    },
+    {
+      "Name": "CAMERA_DAEMON_CPUS",
+      "ID" : "0x41003006",
+      "Handler" : "sysfs",
+      "BoostPath" : "/dev/cpuset/camera-daemon/cpus",
+      "Priority" : "high",
+      "DefaultValue": "0",
+      "Values": [
+        "0","1"
+      ],
+      "SValues": [
+        "0-7","4-7"
+      ]
+    }
+  ],
+  "Hints": [
+    {
+      "Hint": "AMS_RESUME",
+      "ID" : "1",
+      "Duration" : "-1",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1651200"
+        },
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "1555000"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "768000"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_RELAUNCH_RESUME",
+      "ID" : "2",
+      "Duration" : "1000",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1651200"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_ACT_RESUME",
+      "ID" : "3",
+      "Duration" : "-1",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1651200"
+        },
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "1555000"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "768000"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_ACT_RESUME_LOW",
+      "ID" : "30",
+      "Duration" : "-1",
+      "ResoureList": [
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "1555000"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "768000"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_ACT_START",
+      "ID" : "4",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1900800"
+        },
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "1555000"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "768000"
+        },
+        {
+          "Resource" : "LPMBias",
+          "Value" : "5"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_ACT_START_LOW",
+      "ID" : "29",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "1555000"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "768000"
+        },
+        {
+          "Resource" : "LPMBias",
+          "Value" : "5"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_RESUME_TAIL",
+      "ID" : "5",
+      "Duration": "300",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1190400"
+        },
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "1555000"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "768000"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_RESUME_TAIL_LOW",
+      "ID" : "31",
+      "Duration": "300",
+      "ResoureList": [
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "1555000"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "768000"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_ACT_LAZY",
+      "ID" : "6",
+      "Duration": "15000",
+      "ResoureList": [
+        {
+          "Resource" : "LPMBias",
+          "Value" : "5"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_SWITCH",
+      "ID" : "7",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "100#"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "2092000"
+        },
+        {
+          "Resource" : "LPMBias",
+          "Value" : "5"
+        },
+        {
+          "Resource" : "TABoost",
+          "Value" : "NONE"
+        },
+        {
+            "Resource" : "CPULittleMinFreq",
+            "Value" : "100#"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_HOME",
+      "ID" : "8",
+      "Duration": "500",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "100#"
+        }
+      ]
+    },
+    {
+      "Hint": "GALLERY_TOUCH",
+      "ID" : "9",
+      "Duration": "500",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "GALLERY_TOUCH_TAIL",
+      "ID" : "10",
+      "Duration": "500",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "GALLERY_SCROLL",
+      "ID" : "11",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "LAUNCHER_TOUCH",
+      "ID" : "12",
+      "Duration": "1000",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "LISTVIEW_SCROLL",
+      "ID" : "16",
+      "Duration": "10000",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "NONE"
+        },
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "APP_LAUNCH",
+      "ID" : "18",
+      "Duration": "700",
+      "ResoureList": [
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "100#"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "2092000"
+        },
+        {
+          "Resource" : "TABoost",
+          "Value" : "NONE"
+        },
+        {
+            "Resource" : "CPULittleMinFreq",
+            "Value" : "100#"
+        },
+        {
+            "Resource" : "FOREGROUND_BOOST_SHARE",
+            "Value" : "20480"
+        },
+        {
+            "Resource" : "TOPAPP_SHARE",
+            "Value" : "20480"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH",
+      "Duration": "1000",
+      "ResoureList": [
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "100#"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "2092000"
+        },
+        {
+          "Resource" : "TABoost",
+          "Value" : "NONE"
+        },
+        {
+            "Resource" : "CPULittleMinFreq",
+            "Value" : "100#"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH_M",
+      "ResoureList": [
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "100#"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "2092000"
+        },
+        {
+          "Resource" : "TABoost",
+          "Value" : "NONE"
+        },
+        {
+          "Resource" : "Memboost",
+          "Value" : "2"
+        }
+      ]
+    },
+    {
+      "Hint": "AMS_APP_LAUNCH_LM",
+      "Duration": "2000",
+      "ResoureList": [
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "100#"
+        },
+        {
+          "Resource" : "DDRMinFreqLow",
+          "Value" : "2092000"
+        },
+        {
+          "Resource" : "TABoost",
+          "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "DEVICE_WAKEUP",
+      "ID" : "19",
+      "Duration": "1000",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1190400"
+        }
+      ]
+    },
+    {
+      "Hint": "HOME_KEY_TOUCH",
+      "ID" : "14",
+      "Duration": "1000",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1190400"
+        }
+      ]
+    },
+
+    {
+      "Hint": "CONTACT_SCROLL",
+      "ID" : "20",
+      "Duration": "1000",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1190400"
+        },
+        {
+          "Resource" : "LPMDisable",
+          "Value" : "1"
+        },
+        {
+          "Resource" : "CoreNumBigMin",
+          "Value" : "100#"
+        }
+      ]
+    },
+    {
+      "Hint": "BADGE_UPDATE",
+      "ID" : "26",
+      "Duration": "500",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1190400"
+        }
+      ]
+    },
+    {
+      "Hint": "SMOOTH_SCROLL",
+      "ID" : "21",
+      "Duration": "10000",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1190400"
+        },
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "1017000"
+        }
+      ]
+    },
+    {
+      "Hint": "GESTURE_DETECTED",
+      "ID" : "22",
+      "Duration": "500",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1190400"
+        },
+        {
+          "Resource" : "LPMBias",
+          "Value" : "5"
+        }
+      ]
+    },
+    {
+      "Hint": "GESTURE_DETECTED_HRR",
+      "ID" : "23",
+      "Duration": "500",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "1190400"
+        },
+        {
+          "Resource" : "LPMBias",
+          "Value" : "9"
+        },
+        {
+          "Resource" : "CoreNumBigMin",
+          "Value" : "100#"
+        }
+      ]
+    },
+    {
+      "Hint": "PWM_ROTATION",
+      "ID" : "15",
+      "Duration": "2000",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "100#"
+        },
+        {
+          "Resource" : "DDRMinFreq",
+          "Value" : "2092000"
+        },
+        {
+          "Resource" : "LPMDisable",
+          "Value" : "1"
+        }
+      ]
+    },
+    {
+      "Hint": "SMART_VIEW_NORMAL",
+      "ID" : "1200",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "748800"
+        },
+        {
+          "Resource" : "CoreNumBigMin",
+          "Value" : "3"
+        },
+        {
+          "Resource" : "CAMERA_DAEMON_CPUS",
+          "Value" : "1"
+        }
+      ]
+    },
+    {
+      "Hint": "SMART_VIEW_SECURE",
+      "ID" : "1201",
+      "ResoureList": [
+        {
+          "Resource" : "CPUMinFreq",
+          "Value" : "662400"
+        },
+        {
+          "Resource" : "CoreNumBigMin",
+          "Value" : "3"
+        },
+        {
+          "Resource" : "CAMERA_DAEMON_CPUS",
+          "Value" : "1"
+        }
+      ]
+    },
+    {
+      "Hint": "POWER_HINT_FIXED_PERFORMANCE",
+      "ID": "2003",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource": "CPUMaxFreq",
+          "Value": "NONE"
+        },
+        {
+          "Resource": "CPUMinFreq",
+          "Value": "NONE"
+        },
+        {
+          "Resource" : "CPUBigMaxFreq",
+          "Value" : "1651200"
+        },
+        {
+          "Resource" : "CPUBigMinFreq",
+          "Value" : "1651200"
+        },
+        {
+          "Resource" : "CPULittleMaxFreq",
+          "Value" : "1651200"
+        },
+        {
+          "Resource" : "CPULittleMinFreq",
+          "Value" : "1651200"
+        }
+      ]
+    },
+    {
+      "Hint": "WIFI_HEAVY_TRAFFIC_CSTATE",
+      "ID" : "4010",
+      "Duration": "2000",
+      "ResoureList": [
+        {
+          "Resource": "LPMDisable",
+          "Value": "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "WIFI_HEAVY_TRAFFIC_L1SS",
+      "ID" : "4011",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource" : "PCIE_PSM_DISABLE",
+          "Value" : "NONE"
+        }
+      ]
+    },
+    {
+      "Hint": "HINT_CAMERA_CPU_SHARE",
+      "ID" : "4550",
+      "Duration": "-1",
+      "ResoureList": [
+        {
+          "Resource" : "TOPAPP_SHARE",
+          "Value" : "20480"
+        },
+        {
+          "Resource" : "FOREGROUND_SHARE",
+          "Value" : "10240"
+        },
+        {
+          "Resource" : "CAMERA_DAEMON_SHARE",
+          "Value" : "20480"
+        },
+        {
+          "Resource" : "FOREGROUND_BOOST_SHARE",
+          "Value" : "5120"
+        },
+        {
+          "Resource" : "SYSTEM_SHARE",
+          "Value" : "512"
+        },
+        {
+          "Resource" : "DEX2OAT_SHARE",
+          "Value" : "512"
+        }
+      ]
+    },
+    {
+      "Hint": "HINT_RECENT_SCROLLING",
+      "ID": "7001",
+      "Duration": "300",
+      "ResoureList": [
+        {
+          "Resource": "GPUMinFreq",
+          "Value": "650"
+        }
+      ]
+    }
+  ],
+  "Sysfs": [
+    {
+      "SysfsId": "0x00301500",
+      "SysfsName": "DOWNRATE_LIMIT_US_CPU0",
+      "Path": "/sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us"
+    },
+    {
+      "SysfsId": "0x00301504",
+      "SysfsName": "DOWNRATE_LIMIT_US_CPU4",
+      "Path": "/sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us"
+    },
+    {
+      "SysfsId": "0x00301507",
+      "SysfsName": "DOWNRATE_LIMIT_US_CPU7",
+      "Path": "/sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us"
+    },
+    {
+      "SysfsId": "0x00202000",
+      "SysfsName": "CLKSCALE_ENABLE",
+      "Path": "/sys/class/scsi_host/host0/../../../clkscale_enable"
+    }
+  ]
+}

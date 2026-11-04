@@ -1,0 +1,8 @@
+{
+	"version_id": "v2",
+   "pcmodel": "v1.0",
+   "compiler": "onnx2tf",
+   "model_type" : "cpu",
+   "precision" : "float16",
+   "model_path" : "/vendor/etc/saiv/image_understanding/db/hs_segmenter/12-39_PhotoEditor_SuggestErases_v1.10.1_BGPclassifier.tflite"
+}

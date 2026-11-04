@@ -1,0 +1,11 @@
+<!--
+    Input:
+        vendor/samsung/hal-server/displayquality/aidl/default/vendor.samsung.hardware.displayquality-default.xml
+-->
+<manifest version="8.0" type="device">
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.displayquality</name>
+        <version>2</version>
+        <fqname>ISehDisplayQuality/default</fqname>
+    </hal>
+</manifest>
