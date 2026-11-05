@@ -9406,32 +9406,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libbinderdebug",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbinderdebug.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 rust_prebuilt_dylib {
     name: "libbitflags",
     owner: "samsung",
@@ -14202,38 +14176,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libkernelmanager.so",
             ],
             shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libkeymaster4_1support",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymaster4_1support.so",
-            ],
-            shared_libs: [
-                "android.hardware.keymaster@3.0",
-                "android.hardware.keymaster@4.0",
-                "android.hardware.keymaster@4.1",
-                "libbase",
-                "libcrypto",
-                "libhidlbase",
-                "libkeymaster4support",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",

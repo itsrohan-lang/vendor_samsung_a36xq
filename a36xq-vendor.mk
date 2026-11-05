@@ -1082,7 +1082,6 @@ PRODUCT_PACKAGES += \
     libbatching \
     libbatterylistener \
     libbeautyshot.arcsoft \
-    libbinderdebug \
     libbitflags \
     libbitmlengine \
     libbitmlenginev2 \
@@ -1243,7 +1242,6 @@ PRODUCT_PACKAGES += \
     libjson \
     libkcl \
     libkernelmanager \
-    libkeymaster4_1support \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
     liblbs_core \
