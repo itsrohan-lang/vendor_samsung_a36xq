@@ -1137,7 +1137,6 @@ PRODUCT_PACKAGES += \
     libcodec2_sec_mp4vdec \
     libcodec2_sec_soft_common \
     libcodec2_sec_vc1dec \
-    libcodec2_simple_component \
     libcodec2_soft_ac4dec \
     libcodec2_soft_common \
     libcodec2_soft_eac3dec \
@@ -1346,7 +1345,6 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libplatformconfig \
     libprofileparamstorage \
-    libpsi \
     libq-perflog \
     libq3dtools_adreno \
     libqc2audio_base \
