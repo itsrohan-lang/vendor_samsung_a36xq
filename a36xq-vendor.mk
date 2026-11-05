@@ -2273,3 +2273,53 @@ PRODUCT_PACKAGES += \
     wpa_cli \
     wvkprov \
     xtra-daemon
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.camera.autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.autofocus.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.ese.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.telephony.mbms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.mbms.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.vulkan.version-1_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_3.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.software.opengles.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/android.software.vulkan.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/features_com.android.virt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/features_com.android.virt.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/privapp-permissions-qti-vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-qti-vendor.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/samsung.software.secure_key_service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/samsung.software.secure_key_service.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/vendor.samsung.hardware.telephony.cdma_excluded.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.samsung.hardware.telephony.cdma_excluded.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml \
+    vendor/samsung/a36xq/proprietary/vendor/etc/permissions/vendor.samsung.hardware.telephony.satellite.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.samsung.hardware.telephony.satellite.xml
