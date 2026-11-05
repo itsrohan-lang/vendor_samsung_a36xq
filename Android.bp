@@ -9,34 +9,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "graphicbuffersource-aidl-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/graphicbuffersource-aidl-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libnativewindow",
-                "android.hardware.graphics.common-V7-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-
-
-cc_prebuilt_library_shared {
     name: "libarcsoft_photoeditor.arcsoft",
     owner: "samsung",
     strip: {

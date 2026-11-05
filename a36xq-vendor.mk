@@ -774,7 +774,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a36xq/proprietary/vendor/saiv/sr_engine_model/nima_crop_pair_v0.0.2_mobilenetv2_fp16.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/sr_engine_model/nima_crop_pair_v0.0.2_mobilenetv2_fp16.tflite
 
 PRODUCT_PACKAGES += \
-    graphicbuffersource-aidl-ndk \
     libarcsoft_photoeditor.arcsoft \
     libcharon \
     libdatasource \
