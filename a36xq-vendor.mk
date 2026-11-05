@@ -1124,7 +1124,6 @@ PRODUCT_PACKAGES += \
     libchilog \
     libclconverter \
     libcodec2_aidl \
-    libcodec2_hal_common \
     libcodec2_hidl@1.1 \
     libcodec2_hidl@1.2 \
     libcodec2_hidl_plugin \
