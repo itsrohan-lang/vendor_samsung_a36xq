@@ -775,7 +775,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     graphicbuffersource-aidl-ndk \
-    libaconfig_storage_read_api_cc \
     libarcsoft_photoeditor.arcsoft \
     libcharon \
     libdatasource \
@@ -1037,7 +1036,6 @@ PRODUCT_PACKAGES += \
     lib_bt_ble \
     lib_bt_bundle \
     lib_samsung_profiler \
-    libaconfig_storage_read_api_cc \
     libadm \
     libadreno_app_profiles \
     libadreno_compiler_cl \
@@ -1054,8 +1052,6 @@ PRODUCT_PACKAGES += \
     libaidenoiser \
     libaidenoiserv2 \
     libaivideocentral.arcsoft \
-    libandroid_log_sys \
-    libanyhow \
     libar-acdb \
     libar-gpr \
     libar-gsl \
@@ -1064,7 +1060,6 @@ PRODUCT_PACKAGES += \
     libats \
     libaudio_aidl_conversion_common_ndk \
     libaudio_log_utils \
-    libaudioaidlcommon \
     libaudiochargerlistener \
     libaudioplatformconverter.qti \
     libaudioserviceexampleimpl \
@@ -1075,11 +1070,9 @@ PRODUCT_PACKAGES += \
     libbatching \
     libbatterylistener \
     libbeautyshot.arcsoft \
-    libbitflags \
     libbitmlengine \
     libbitmlenginev2 \
     libbluetooth_audio_session \
-    libbluetooth_audio_session_aidl \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -1112,7 +1105,6 @@ PRODUCT_PACKAGES += \
     libcdfw_remote_api \
     libcdsp_default_listener \
     libcdsprpc \
-    libcfg_if \
     libchilog \
     libclconverter \
     libcodec2_hidl_plugin \
@@ -1132,9 +1124,6 @@ PRODUCT_PACKAGES += \
     libcom.qti.chinodeutils \
     libconfigdb \
     libcpion \
-    libcppbor \
-    libcppbor_external \
-    libcppcose_rkp \
     libdataitems \
     libdeccfg \
     libdiag \
@@ -1164,7 +1153,6 @@ PRODUCT_PACKAGES += \
     libengmode_client \
     libengmode_server \
     libengmode_tlc \
-    libenv_logger \
     libevent_finder.uniplugin@1.0 \
     libexifa.camera.samsung \
     libface_landmark.arcsoft \
@@ -1213,7 +1201,6 @@ PRODUCT_PACKAGES += \
     libhypervintf \
     libidl \
     libimage_enhancement.arcsoft \
-    libimage_io \
     libimagecodec_native.quram \
     libimgproc_sw.unifunc@common \
     libintervmipc \
@@ -1235,7 +1222,6 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     liblbs_core \
     liblearningmodule \
-    liblibc \
     liblightninglaunches \
     liblistensoundmodel2vendor \
     liblistensoundmodelaidl \
@@ -1264,8 +1250,6 @@ PRODUCT_PACKAGES += \
     liblocationservice \
     liblocationservice_glue \
     liblocdiagiface \
-    liblog_rust \
-    liblogger \
     liblowi_client \
     liblowi_common \
     liblx-ar_util \
@@ -1276,7 +1260,6 @@ PRODUCT_PACKAGES += \
     libmdmdetect \
     libmdsprpc \
     libmediaconverter \
-    libmemoffset \
     libmemutils \
     libmeters-ns \
     libmeters \
@@ -1305,11 +1288,9 @@ PRODUCT_PACKAGES += \
     libnicm \
     libnicm_dsi \
     libnicm_utils \
-    libnix \
     liboemaids_vendor \
     liboemcrypto \
     liboffloadhal \
-    libonce_cell \
     libopencv \
     libopencv3a \
     libopestriping \
@@ -1417,7 +1398,6 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     librpmb \
     librtts_client \
-    librustutils \
     libruy \
     libsamsungcamerahal \
     libsamsungcamerahalutils \
@@ -1524,7 +1504,6 @@ PRODUCT_PACKAGES += \
     libtfestriping \
     libtflite \
     libthermalclient \
-    libthiserror \
     libthreadutils \
     libtime_genoff \
     libtinyxml2_1 \
@@ -1543,7 +1522,6 @@ PRODUCT_PACKAGES += \
     libucm_tlc_direct_comm \
     libucm_tlc_tz_esecomm \
     libuniplugin \
-    libvibratorutils \
     libvideobeauty.arcsoft \
     libvideobeauty.uniplugin@1.0 \
     libvideobeauty_capture.uniplugin@1.0 \
@@ -1587,7 +1565,6 @@ PRODUCT_PACKAGES += \
     libsw2dlut_dsp_skel \
     sensors.grip \
     sensors.ssc \
-    server_configurable_flags \
     service-listener-ext-aidl-V1-ndk \
     libaudioeffectoffload \
     libaudioeffectoffload_aidl \
