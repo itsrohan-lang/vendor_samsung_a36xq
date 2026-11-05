@@ -1416,7 +1416,6 @@ PRODUCT_PACKAGES += \
     libqti-sslite \
     libqti-util \
     libqti-utils \
-    libqti_vndfwk_detect \
     libqti_vndfwk_detect_vendor \
     libqtigefar \
     libqtiidentitycredential \
@@ -1573,7 +1572,6 @@ PRODUCT_PACKAGES += \
     libvkservice \
     libvmfilexfer \
     libvmmem \
-    libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti_vendor \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
