@@ -1339,7 +1339,6 @@ PRODUCT_PACKAGES += \
     libqti-appclassifier \
     libqti-jankrescue \
     libqti-lllite \
-    libqti-perfd-client \
     libqti-perfd \
     libqti-perfextn-intf \
     libqti-s3tf \
@@ -1347,7 +1346,6 @@ PRODUCT_PACKAGES += \
     libqti-sslite \
     libqti-util \
     libqti-utils \
-    libqti_vndfwk_detect_vendor \
     libqtigefar \
     libqtiidentitycredential \
     libqwes \
@@ -1357,7 +1355,6 @@ PRODUCT_PACKAGES += \
     librecovery_updater_msm \
     libreffeature \
     libril_sem \
-    librmnetctl \
     librpmb \
     librtts_client \
     libsamsungcamerahal \
@@ -1487,8 +1484,6 @@ PRODUCT_PACKAGES += \
     libvkmanager_vendor \
     libvkservice \
     libvmfilexfer \
-    libvmmem \
-    libvndfwk_detect_jni.qti_vendor \
     libwifi-hal \
     libwifiobserver \
     libwpa_client \
@@ -1915,7 +1910,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.supplicant.xml \
     audioeffectservice_qti.xml \
     bluetooth_hci.xml \
-    boot-service.qti.xml \
     c2_manifest_vendor_audio.xml \
     cacert-saidl.xml \
     converter_manifest.xml \
@@ -2042,7 +2036,6 @@ PRODUCT_PACKAGES += \
     hermesd \
     hostapd_cli \
     android.hardware.bluetooth@aidl-service-qti \
-    android.hardware.boot-service.qti \
     android.hardware.drm-service.clearkey \
     android.hardware.dumpstate-service \
     android.hardware.gatekeeper-service \
@@ -2052,7 +2045,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power.samsung-service \
     android.hardware.security.keymint-service \
     android.hardware.sensors-service.multihal \
-    android.hardware.usb-service.qti \
     android.hardware.weaver-service-spu-qti \
     android.hardware.wifi-service \
     audiohalservice.qti \
@@ -2065,7 +2057,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.MemHal-service \
     vendor.qti.hardware.capabilityconfigstore-service \
     vendor.qti.hardware.display.color-service \
-    vendor.qti.hardware.memtrack-service \
     vendor.qti.hardware.perf2-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.servicetrackeraidl-service \
@@ -2108,7 +2099,6 @@ PRODUCT_PACKAGES += \
     mm-audio-ftm \
     nativechitest \
     nativehaltest \
-    nqnfcinfo \
     pd-mapper \
     pktlogconf \
     pm-proxy \
@@ -2160,7 +2150,6 @@ PRODUCT_PACKAGES += \
     utility_cache_test.tflite \
     vaultkeeperd \
     vendor.qti.hardware.soter-provision \
-    vendor.qti.qspa-service \
     vendor.samsung.hardware.security.engmode-service \
     vendor.samsung.hardware.security.fkeymaster-service \
     vendor.samsung.hardware.security.hdcp.wifidisplay-service \
