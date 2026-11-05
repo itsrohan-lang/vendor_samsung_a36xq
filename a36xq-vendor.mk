@@ -1138,7 +1138,6 @@ PRODUCT_PACKAGES += \
     libcodec2_sec_soft_common \
     libcodec2_sec_vc1dec \
     libcodec2_soft_ac4dec \
-    libcodec2_soft_common \
     libcodec2_soft_eac3dec \
     libcolor-default \
     libcom.qti.chinodeutils \
@@ -1292,7 +1291,6 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libmediaconverter \
     libmediautils_vendor \
-    libmeminfo \
     libmemoffset \
     libmemutils \
     libmeters-ns \
@@ -1482,7 +1480,6 @@ PRODUCT_PACKAGES += \
     libsfeShiftExtrapolation \
     libsfp_sensor \
     libsfp_teegw \
-    libsfplugin_ccodec_utils \
     libsgutils2 \
     libshctrl \
     libshotsuggestion \
