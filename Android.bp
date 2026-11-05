@@ -5414,7 +5414,6 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libEGL_adreno.egl",
     stem: "libEGL_adreno",
-    relative_install_path: "egl",
     owner: "samsung",
     strip: {
         none: true,
@@ -5475,7 +5474,6 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libGLESv2_adreno.egl",
     stem: "libGLESv2_adreno",
-    relative_install_path: "egl",
     owner: "samsung",
     strip: {
         none: true,
@@ -5534,7 +5532,6 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libq3dtools_adreno.egl",
     stem: "libq3dtools_adreno",
-    relative_install_path: "egl",
     owner: "samsung",
     strip: {
         none: true,
