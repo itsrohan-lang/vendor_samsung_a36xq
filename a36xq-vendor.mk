@@ -1727,7 +1727,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.0.system_ext \
     vendor.qti.hardware.perf@2.1 \
     vendor.qti.hardware.perf@2.1.system_ext \
-    vendor.qti.hardware.perf@2.2 \
     vendor.qti.hardware.perf@2.2.system_ext \
     vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qdutils_disp@1.0.system_ext \
@@ -1937,7 +1936,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.perf@2.0 \
     vendor.qti.hardware.perf@2.1 \
-    vendor.qti.hardware.perf@2.2 \
     vendor.qti.hardware.perf@2.3 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccsyshal@1.1 \
