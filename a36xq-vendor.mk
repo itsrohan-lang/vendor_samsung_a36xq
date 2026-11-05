@@ -1527,7 +1527,6 @@ PRODUCT_PACKAGES += \
     libthiserror \
     libthreadutils \
     libtime_genoff \
-    libtinyalsav2 \
     libtinyxml2_1 \
     libtlc_direct_comm_iccc \
     libtlpd \
