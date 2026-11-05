@@ -948,7 +948,6 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_adreno.egl \
     libq3dtools_esx \
-    framework-permission-aidl-cpp \
     android.hardware.renderscript@1.0-impl \
     audio.bluetooth.default \
     audio.bluetooth_qti.default \
