@@ -36999,3 +36999,29 @@ cc_prebuilt_binary {
     prefer: true,
     soc_specific: true,
 }
+
+// Samsung ships protobuf 6.33.5 on /system while the ROM builds 21.x, and
+// vendor.qti.hardware.qccsyshal@1.2-halimpl (from system_ext) links the 6.33.5
+// soname. Carry the stock library so that dependency resolves.
+cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-full-6.33.5",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libprotobuf-cpp-full-6.33.5.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}

@@ -2165,3 +2165,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a36xq/proprietary/vendor/etc/permissions/vendor.samsung.hardware.telephony.cdma_excluded.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.samsung.hardware.telephony.cdma_excluded.xml \
     vendor/samsung/a36xq/proprietary/vendor/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml \
     vendor/samsung/a36xq/proprietary/vendor/etc/permissions/vendor.samsung.hardware.telephony.satellite.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.samsung.hardware.telephony.satellite.xml
+
+# Samsung system protobuf (see the module in Android.bp)
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-6.33.5
