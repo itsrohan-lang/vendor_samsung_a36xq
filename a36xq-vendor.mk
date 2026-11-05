@@ -1055,7 +1055,6 @@ PRODUCT_PACKAGES += \
     libaidenoiserv2 \
     libaivideocentral.arcsoft \
     libandroid_log_sys \
-    libandroid_logger \
     libanyhow \
     libar-acdb \
     libar-gpr \

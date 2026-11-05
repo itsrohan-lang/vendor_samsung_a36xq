@@ -8686,31 +8686,6 @@ rust_prebuilt_dylib {
 }
 
 rust_prebuilt_dylib {
-    name: "libandroid_logger",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libandroid_logger.dylib.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-            ],
-            rustlibs: [
-                "libenv_logger",
-                "liblog_rust",
-                "libonce_cell",
-                "libstd",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-rust_prebuilt_dylib {
     name: "libanyhow",
     owner: "samsung",
     target: {
