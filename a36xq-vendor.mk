@@ -785,7 +785,6 @@ PRODUCT_PACKAGES += \
     libmedia_codeclist \
     libmedia_codeclist_capabilities \
     libmpbase \
-    libstagefright_bufferpool@2.0.1 \
     libstagefright_codecbase \
     libstagefright_framecapture_utils \
     libstagefright_graphicbuffersource_aidl \
@@ -1512,7 +1511,6 @@ PRODUCT_PACKAGES += \
     libssc_default_listener \
     libssd \
     libssengine.uniplugin@1.0 \
-    libstagefright_bufferpool@2.0.1 \
     libstagefright_foundation_vendor \
     libstagefrighthw \
     libstd \
