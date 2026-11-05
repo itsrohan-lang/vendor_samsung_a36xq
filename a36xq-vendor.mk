@@ -1055,8 +1055,6 @@ PRODUCT_PACKAGES += \
     libaidenoiser \
     libaidenoiserv2 \
     libaivideocentral.arcsoft \
-    libalsautils \
-    libalsautilsv2 \
     libandroid_log_sys \
     libandroid_logger \
     libanyhow \
@@ -1120,8 +1118,6 @@ PRODUCT_PACKAGES += \
     libchilog \
     libclconverter \
     libcodec2_aidl \
-    libcodec2_hidl@1.1 \
-    libcodec2_hidl@1.2 \
     libcodec2_hidl_plugin \
     libcodec2_sec_aacdec \
     libcodec2_sec_aacenc \
@@ -1284,7 +1280,6 @@ PRODUCT_PACKAGES += \
     libmdmdetect \
     libmdsprpc \
     libmediaconverter \
-    libmediautils_vendor \
     libmemoffset \
     libmemutils \
     libmeters-ns \

@@ -8667,62 +8667,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libalsautils",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libalsautils.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libtinyalsa",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libalsautilsv2",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libalsautilsv2.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libtinyalsav2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 rust_prebuilt_dylib {
     name: "libandroid_log_sys",
     owner: "samsung",
@@ -10590,98 +10534,6 @@ cc_prebuilt_library_shared {
                 "libstagefright_bufferpool@2.0.1",
                 "libui",
                 "libutils",
-                "libcodec2_hidl_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.1",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hal_common",
-                "libcodec2_hidl@1.0",
-                "libcodec2_vndk",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.2",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hal_common",
-                "libcodec2_hidl@1.0",
-                "libcodec2_hidl@1.1",
-                "libcodec2_vndk",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui",
-                "libutils",
-                "libstagefright_bufferqueue_helper",
                 "libcodec2_hidl_plugin",
                 "libc++",
                 "libc",
@@ -15437,32 +15289,6 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "liblog",
                 "libui",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmediautils_vendor",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmediautils_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
