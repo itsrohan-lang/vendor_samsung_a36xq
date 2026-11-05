@@ -1058,7 +1058,6 @@ PRODUCT_PACKAGES += \
     libar-pal \
     libarcsoft_super_night_auto_raw \
     libats \
-    libaudio_aidl_conversion_common_ndk \
     libaudio_log_utils \
     libaudiochargerlistener \
     libaudioplatformconverter.qti \
@@ -1398,7 +1397,6 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     librpmb \
     librtts_client \
-    libruy \
     libsamsungcamerahal \
     libsamsungcamerahalutils \
     libsamsungcamerahwl_impl \
@@ -1476,7 +1474,6 @@ PRODUCT_PACKAGES += \
     libsoc_helper \
     libsoc_helper_jni \
     libsocial_image_enhancement.uniplugin@1.0 \
-    libsoft_attestation_cert \
     libspatializerparamstorage \
     libspcom \
     libspeakercalibration \
@@ -1490,7 +1487,6 @@ PRODUCT_PACKAGES += \
     libssengine.uniplugin@1.0 \
     libstagefright_foundation_vendor \
     libstagefrighthw \
-    libstd \
     libstork_shared \
     libstreamparser \
     libsubsystem_control \
