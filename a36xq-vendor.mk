@@ -1603,34 +1603,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lce@1.0.system_ext \
     vendor.qti.hardware.data.lceaidlservice-V1-ndk \
     vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
-    vendor.qti.hardware.display.color-V1-ndk \
-    vendor.qti.hardware.display.composer3-V1-ndk \
-    vendor.qti.hardware.display.composer3-V2-ndk \
-    vendor.qti.hardware.display.composer3-V3-ndk \
-    vendor.qti.hardware.display.config-V1-ndk \
-    vendor.qti.hardware.display.config-V1-ndk.system_ext \
-    vendor.qti.hardware.display.config-V10-ndk \
-    vendor.qti.hardware.display.config-V10-ndk.system_ext \
-    vendor.qti.hardware.display.config-V11-ndk \
-    vendor.qti.hardware.display.config-V11-ndk.system_ext \
-    vendor.qti.hardware.display.config-V2-ndk \
-    vendor.qti.hardware.display.config-V2-ndk.system_ext \
-    vendor.qti.hardware.display.config-V3-ndk \
-    vendor.qti.hardware.display.config-V3-ndk.system_ext \
-    vendor.qti.hardware.display.config-V4-ndk \
-    vendor.qti.hardware.display.config-V4-ndk.system_ext \
-    vendor.qti.hardware.display.config-V5-ndk \
-    vendor.qti.hardware.display.config-V5-ndk.system_ext \
-    vendor.qti.hardware.display.config-V6-ndk \
-    vendor.qti.hardware.display.config-V6-ndk.system_ext \
-    vendor.qti.hardware.display.config-V7-ndk \
-    vendor.qti.hardware.display.config-V7-ndk.system_ext \
-    vendor.qti.hardware.display.config-V8-ndk \
-    vendor.qti.hardware.display.config-V8-ndk.system_ext \
-    vendor.qti.hardware.display.config-V9-ndk \
-    vendor.qti.hardware.display.config-V9-ndk.system_ext \
-    vendor.qti.hardware.display.demura-V1-ndk \
-    vendor.qti.hardware.display.postproc-V1-ndk \
     vendor.qti.hardware.display.snapalloc-impl \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dsp-V1-ndk \
@@ -1813,24 +1785,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.display.config-V1-ndk \
-    vendor.qti.hardware.display.config-V10-ndk \
-    vendor.qti.hardware.display.config-V11-ndk \
-    vendor.qti.hardware.display.config-V12-ndk \
-    vendor.qti.hardware.display.config-V13-ndk \
-    vendor.qti.hardware.display.config-V14-ndk \
-    vendor.qti.hardware.display.config-V15-ndk \
-    vendor.qti.hardware.display.config-V16-ndk \
-    vendor.qti.hardware.display.config-V17-ndk \
-    vendor.qti.hardware.display.config-V18-ndk \
-    vendor.qti.hardware.display.config-V2-ndk \
-    vendor.qti.hardware.display.config-V3-ndk \
-    vendor.qti.hardware.display.config-V4-ndk \
-    vendor.qti.hardware.display.config-V5-ndk \
-    vendor.qti.hardware.display.config-V6-ndk \
-    vendor.qti.hardware.display.config-V7-ndk \
-    vendor.qti.hardware.display.config-V8-ndk \
-    vendor.qti.hardware.display.config-V9-ndk \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.limits@1.0 \
     vendor.qti.hardware.limits@1.1 \
