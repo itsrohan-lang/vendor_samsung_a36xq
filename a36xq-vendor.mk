@@ -1199,7 +1199,6 @@ PRODUCT_PACKAGES += \
     libgpudataproducer \
     libgralloc.qti \
     libgralloccore \
-    libgrallocusage \
     libgrallocutils \
     libgsl \
     libhal.wsm.samsung \
