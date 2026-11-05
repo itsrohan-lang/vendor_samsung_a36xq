@@ -1596,26 +1596,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.3.system_ext \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
-    vendor.display.config@1.0 \
-    vendor.display.config@1.0.system_ext \
-    vendor.display.config@1.1 \
-    vendor.display.config@1.1.system_ext \
-    vendor.display.config@1.10 \
-    vendor.display.config@1.11 \
-    vendor.display.config@1.2 \
-    vendor.display.config@1.2.system_ext \
-    vendor.display.config@1.3 \
-    vendor.display.config@1.3.system_ext \
-    vendor.display.config@1.4 \
-    vendor.display.config@1.4.system_ext \
-    vendor.display.config@1.5 \
-    vendor.display.config@1.5.system_ext \
-    vendor.display.config@1.6 \
-    vendor.display.config@1.7 \
-    vendor.display.config@1.8 \
-    vendor.display.config@1.9 \
-    vendor.display.config@2.0 \
-    vendor.display.config@2.0.system_ext \
     vendor.display.postproc@1.0 \
     vendor.display.postproc@1.0.system_ext \
     vendor.qti.ImsRtpService-V1-ndk \
@@ -1635,8 +1615,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.ListenSoundModelAidl-V1-ndk \
     vendor.qti.hardware.agm-V1-ndk \
     vendor.qti.hardware.automotive.vehicle@1.0 \
-    vendor.qti.hardware.bluetooth_audio@2.0 \
-    vendor.qti.hardware.bluetooth_audio@2.1 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.bttpi-V3-ndk \
@@ -1672,14 +1650,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lce@1.0.system_ext \
     vendor.qti.hardware.data.lceaidlservice-V1-ndk \
     vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
-    vendor.qti.hardware.display.allocator@1.0 \
-    vendor.qti.hardware.display.allocator@3.0 \
     vendor.qti.hardware.display.color-V1-ndk \
     vendor.qti.hardware.display.composer3-V1-ndk \
     vendor.qti.hardware.display.composer3-V2-ndk \
     vendor.qti.hardware.display.composer3-V3-ndk \
-    vendor.qti.hardware.display.composer@1.0 \
-    vendor.qti.hardware.display.composer@2.0 \
     vendor.qti.hardware.display.config-V1-ndk \
     vendor.qti.hardware.display.config-V1-ndk.system_ext \
     vendor.qti.hardware.display.config-V10-ndk \
@@ -1703,15 +1677,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.config-V9-ndk \
     vendor.qti.hardware.display.config-V9-ndk.system_ext \
     vendor.qti.hardware.display.demura-V1-ndk \
-    vendor.qti.hardware.display.mapper@1.0 \
-    vendor.qti.hardware.display.mapper@1.1 \
-    vendor.qti.hardware.display.mapper@2.0 \
-    vendor.qti.hardware.display.mapper@3.0 \
-    vendor.qti.hardware.display.mapper@4.0 \
-    vendor.qti.hardware.display.mapperextensions@1.0 \
-    vendor.qti.hardware.display.mapperextensions@1.1 \
-    vendor.qti.hardware.display.mapperextensions@1.2 \
-    vendor.qti.hardware.display.mapperextensions@1.3 \
     vendor.qti.hardware.display.postproc-V1-ndk \
     vendor.qti.hardware.display.snapalloc-impl \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
@@ -1723,10 +1688,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
     vendor.qti.hardware.pal-V1-ndk \
     vendor.qti.hardware.perf2-V1-ndk \
-    vendor.qti.hardware.perf@2.0 \
-    vendor.qti.hardware.perf@2.0.system_ext \
-    vendor.qti.hardware.perf@2.1 \
-    vendor.qti.hardware.perf@2.1.system_ext \
     vendor.qti.hardware.perf@2.2.system_ext \
     vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qdutils_disp@1.0.system_ext \
@@ -1736,10 +1697,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0.system_ext \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.qteeconnector@1.0.system_ext \
-    vendor.qti.hardware.servicetracker@1.0 \
-    vendor.qti.hardware.servicetracker@1.1 \
     vendor.qti.hardware.soter-V1-ndk \
-    vendor.qti.hardware.systemhelper@1.0 \
     vendor.qti.hardware.trustedui-V1-ndk \
     vendor.qti.hardware.trustedui-V1-ndk.system_ext \
     vendor.qti.hardware.trustedui@1.0 \
@@ -1866,13 +1824,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
     vendor.display.color@1.3 \
-    vendor.display.config@1.0 \
-    vendor.display.config@1.1 \
-    vendor.display.config@1.2 \
-    vendor.display.config@1.3 \
-    vendor.display.config@1.4 \
-    vendor.display.config@1.5 \
-    vendor.display.config@2.0 \
     vendor.display.postproc@1.0 \
     vendor.qti.data.factory@1.0 \
     vendor.qti.data.factory@2.0 \
@@ -1887,7 +1838,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.mwqem@1.0 \
     vendor.qti.data.slm@1.0 \
     vendor.qti.diaghal@1.0 \
-    vendor.qti.hardware.capabilityconfigstore@1.0 \
     vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
     vendor.qti.hardware.data.cne.internal.constants@1.0 \
@@ -1910,8 +1860,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.display.composer@3.0 \
-    vendor.qti.hardware.display.composer@3.1 \
     vendor.qti.hardware.display.config-V1-ndk \
     vendor.qti.hardware.display.config-V10-ndk \
     vendor.qti.hardware.display.config-V11-ndk \
@@ -1934,9 +1882,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.0 \
     vendor.qti.hardware.limits@1.1 \
     vendor.qti.hardware.mwqemadapter@1.0 \
-    vendor.qti.hardware.perf@2.0 \
-    vendor.qti.hardware.perf@2.1 \
-    vendor.qti.hardware.perf@2.3 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qccsyshal@1.1 \
     vendor.qti.hardware.qccsyshal@1.2-halimpl \
