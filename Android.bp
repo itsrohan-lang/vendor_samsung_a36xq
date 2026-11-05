@@ -6039,39 +6039,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsoundtriggerhal.qti",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/libsoundtriggerhal.qti.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder_ndk",
-                "android.hardware.soundtrigger3-V1-ndk",
-                "android.media.audio.common.types-V2-ndk",
-                "libar-pal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "local_time.default",
     owner: "samsung",
     strip: {
@@ -8351,86 +8318,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libar-acdb",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libar-acdb.so",
-            ],
-            shared_libs: [
-                "liblx-osal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libar-gpr",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libar-gpr.so",
-            ],
-            shared_libs: [
-                "liblx-osal",
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libar-gsl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libar-gsl.so",
-            ],
-            shared_libs: [
-                "liblx-osal",
-                "libar-acdb",
-                "liblx-ar_util",
-                "libar-gpr",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libarcsoft_super_night_auto_raw",
     owner: "samsung",
     strip: {
@@ -8444,36 +8331,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmpbase",
                 "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libats",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libats.so",
-            ],
-            shared_libs: [
-                "liblx-osal",
-                "libutils",
-                "libcutils",
-                "libdiag",
-                "libar-gsl",
-                "libar-acdb",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -13793,62 +13650,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libloc_base_util",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "liblx-ar_util",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liblx-ar_util.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "liblx-osal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "liblx-osal",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liblx-osal.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdiag",
-                "libion",
-                "libpdmapper",
-                "libpdnotifier",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",

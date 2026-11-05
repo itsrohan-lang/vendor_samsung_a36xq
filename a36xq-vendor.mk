@@ -962,7 +962,6 @@ PRODUCT_PACKAGES += \
     libaudiocorehal.qti \
     libaudioeffecthal.qti \
     libsecaudiohal_aidl \
-    libsoundtriggerhal.qti \
     local_time.default \
     mapper.qti \
     power.default \
@@ -1042,11 +1041,7 @@ PRODUCT_PACKAGES += \
     libaidenoiser \
     libaidenoiserv2 \
     libaivideocentral.arcsoft \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
     libarcsoft_super_night_auto_raw \
-    libats \
     libaudio_log_utils \
     libaudioplatformconverter.qti \
     libaudioserviceexampleimpl \
@@ -1226,8 +1221,6 @@ PRODUCT_PACKAGES += \
     liblocdiagiface \
     liblowi_client \
     liblowi_common \
-    liblx-ar_util \
-    liblx-osal \
     libmapdata_api \
     libmapperutils \
     libmctfengine_stub \
