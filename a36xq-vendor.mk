@@ -1179,7 +1179,6 @@ PRODUCT_PACKAGES += \
     libimagecodec_native.quram \
     libimgproc_sw.unifunc@common \
     libintervmipc \
-    libipanat \
     libipebpsstriping \
     libipebpsstriping170 \
     libipebpsstriping480 \
@@ -1265,7 +1264,6 @@ PRODUCT_PACKAGES += \
     libnicm_utils \
     liboemaids_vendor \
     liboemcrypto \
-    liboffloadhal \
     libopencv \
     libopencv3a \
     libopestriping \
@@ -1498,8 +1496,6 @@ PRODUCT_PACKAGES += \
     libvmfilexfer \
     libvmmem \
     libvndfwk_detect_jni.qti_vendor \
-    libwifi-hal-ctrl \
-    libwifi-hal-qcom \
     libwifi-hal \
     libwifiobserver \
     libwpa_client \
@@ -2109,7 +2105,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.wifi-service \
     wpa_supplicant \
     iod \
-    ipacm \
     ipacm-diag \
     irsc_util \
     ks \

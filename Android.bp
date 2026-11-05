@@ -12400,33 +12400,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libipanat",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libipanat.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libipebpsstriping",
     owner: "samsung",
     strip: {
@@ -14958,35 +14931,6 @@ cc_prebuilt_library_shared {
                 "libpower",
                 "libcrypto",
                 "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "liboffloadhal",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liboffloadhal.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbinder_ndk",
-                "libutils",
-                "android.hardware.tetheroffload-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -21805,62 +21749,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwifi-hal-ctrl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwifi-hal-ctrl.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwifi-hal-qcom",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwifi-hal-qcom.so",
-            ],
-            shared_libs: [
-                "libpasn",
-                "libcld80211",
-                "libcrypto",
-                "libcutils",
-                "libnetutils",
-                "liblog",
-                "libnl",
-                "libwifi-hal-ctrl",
                 "libc++",
                 "libc",
                 "libm",
@@ -36298,40 +36186,6 @@ cc_prebuilt_binary {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ipacm",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/ipacm",
-            ],
-            shared_libs: [
-                "liboffloadhal",
-                "libipanat",
-                "libxml2",
-                "libnfnetlink",
-                "libnetfilter_conntrack",
-                "liblog",
-                "libcutils",
-                "libbinder_ndk",
-                "libutils",
-                "android.hardware.tetheroffload-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
