@@ -1030,9 +1030,6 @@ PRODUCT_PACKAGES += \
     lib_SoundAlive_AlbumArt_ver105 \
     lib_SoundAlive_play_plus_ver900 \
     lib_SoundBooster_ver2060 \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     lib_samsung_profiler \
     libadm \
     libadreno_app_profiles \
@@ -1040,11 +1037,6 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
     libagmipcservice \
     libagmmixer \
     libaidenoiser \
@@ -1053,11 +1045,9 @@ PRODUCT_PACKAGES += \
     libar-acdb \
     libar-gpr \
     libar-gsl \
-    libar-pal \
     libarcsoft_super_night_auto_raw \
     libats \
     libaudio_log_utils \
-    libaudiochargerlistener \
     libaudioplatformconverter.qti \
     libaudioserviceexampleimpl \
     libauto_framing_arcsoft.uniplugin@1.0 \
@@ -1065,7 +1055,6 @@ PRODUCT_PACKAGES += \
     libautotracking_interface \
     libbase64 \
     libbatching \
-    libbatterylistener \
     libbeautyshot.arcsoft \
     libbitmlengine \
     libbitmlenginev2 \
@@ -1127,8 +1116,6 @@ PRODUCT_PACKAGES += \
     libdiagjni \
     libdigital-dimming \
     libdisp-aba \
-    libdisplayconfig.qti \
-    libdisplaydebug \
     libdisplayqos \
     libdisplayskuutils \
     libdk_vnd_service_core \
@@ -1136,7 +1123,6 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
-    libdrmutils \
     libdsd2pcm \
     libdsi_netctrl \
     libdsutils \
@@ -1156,9 +1142,7 @@ PRODUCT_PACKAGES += \
     libfastcvdsp_stub \
     libfastcvopt \
     libfidoauthnr_v2 \
-    libfilefinder \
     libfloatingfeature \
-    libfmpal \
     libfocuspeaking \
     libfocuspeaking.uniplugin@1.0 \
     libformatConverter.unifunc \
@@ -1168,11 +1152,7 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgpt \
-    libgpu_tonemapper \
     libgpudataproducer \
-    libgralloc.qti \
-    libgralloccore \
-    libgrallocutils \
     libgsl \
     libhal.wsm.samsung \
     libhand_interaction.uniplugin@1.0 \
@@ -1187,10 +1167,8 @@ PRODUCT_PACKAGES += \
     libheifcapture \
     libhermes \
     libhermes_cred \
-    libhfp_pal \
     libhidparser \
     libhigh_dynamic_range_bokeh \
-    libhistogram \
     libhme \
     libhwvault \
     libhypermotion_core \
@@ -1295,7 +1273,6 @@ PRODUCT_PACKAGES += \
     libos \
     libpadm \
     libpal_net_if \
-    libpalclient \
     libpalipcservice \
     libpasn \
     libpdmapper \
@@ -1334,14 +1311,12 @@ PRODUCT_PACKAGES += \
     libqcodec2_utils \
     libqcodec2_v4l2codec \
     libqcwrappercommon \
-    libqdMetaData \
     libqdcm-algo \
     libqdcm-json-mode-parser \
     libqdcm-mode-parser \
     libqdi \
     libqdp \
     libqdpr \
-    libqdutils \
     libqesdk2_0 \
     libqisl \
     libqll \
@@ -1365,7 +1340,6 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqrtrclient \
     libqseed3 \
-    libqservice \
     libqsh_wifi_test \
     libqshcamera \
     libqsocket \
@@ -1408,14 +1382,11 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
-    libsdmcore \
     libsdmdal \
     libsdmextension \
-    libsdmutils \
     libsdsprpc \
     libsec-ril \
     libsec2qc_conversion \
@@ -1460,7 +1431,6 @@ PRODUCT_PACKAGES += \
     libsnapdragoncolor-qdcm \
     libsnaplite_native \
     libsnaplite_wrapper \
-    libsndcardparser \
     libsnpe_dsp_domains_v3 \
     libsnpe_wrapper \
     libsns_api \
@@ -1571,7 +1541,6 @@ PRODUCT_PACKAGES += \
     libloudnessenhanceraidl \
     libmyspace \
     libmyspace_aidl \
-    libqcomvoiceprocessing \
     libreverbaidl \
     libsamsungSoundbooster_plus \
     libswdap \
@@ -1988,7 +1957,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-service.xml \
     vendor.qti.hardware.capabilityconfigstore-service.xml \
     vendor.qti.hardware.display.allocator-service.xml \
-    vendor.qti.hardware.display.composer-service.xml \
     vendor.qti.hardware.dsp-service.xml \
     vendor.qti.hardware.perf2.xml \
     vendor.qti.hardware.qseecom@1.0-service.xml \
@@ -2046,7 +2014,6 @@ PRODUCT_PACKAGES += \
     applypatch \
     ar_util_in_test_example \
     athdiag \
-    audioadsprpcd \
     audioflacapp \
     boringssl_self_test64 \
     btcoex_cont_config \
@@ -2057,8 +2024,6 @@ PRODUCT_PACKAGES += \
     chiofflinepostproctest \
     cnss-daemon \
     cnss_diag \
-    color_sampling_test \
-    color_sampling_tool \
     cplay \
     ctrlapp_dut \
     debug-diag \
@@ -2110,10 +2075,7 @@ PRODUCT_PACKAGES += \
     secaudiohalaidl \
     vendor.qti.MemHal-service \
     vendor.qti.hardware.capabilityconfigstore-service \
-    vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.color-service \
-    vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.memtrack-service \
     vendor.qti.hardware.perf2-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
