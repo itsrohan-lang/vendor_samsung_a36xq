@@ -1172,7 +1172,6 @@ PRODUCT_PACKAGES += \
     libfastcvopt \
     libfidoauthnr_v2 \
     libfilefinder \
-    libflatbuffers-cpp \
     libfloatingfeature \
     libfmpal \
     libfocuspeaking \
@@ -1568,7 +1567,6 @@ PRODUCT_PACKAGES += \
     libwsmd_functions \
     libxml \
     libxtadapter \
-    libz_stable \
     libzoomroi.samsung \
     libzoomroi_lite.samsung \
     libclearkeycasplugin \
