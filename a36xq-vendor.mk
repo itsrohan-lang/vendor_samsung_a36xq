@@ -1115,7 +1115,6 @@ PRODUCT_PACKAGES += \
     libcfg_if \
     libchilog \
     libclconverter \
-    libcodec2_aidl \
     libcodec2_hidl_plugin \
     libcodec2_sec_aacdec \
     libcodec2_sec_aacenc \
@@ -1522,7 +1521,6 @@ PRODUCT_PACKAGES += \
     libsynx \
     libsys_info_cache \
     libsysmon_cdsp_skel \
-    libsystem_properties_bindgen_sys \
     libtestutils \
     libtfestriping \
     libtflite \
