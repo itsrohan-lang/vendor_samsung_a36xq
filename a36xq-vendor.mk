@@ -1677,7 +1677,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.bttpi-V3-ndk \
     vendor.qti.hardware.cacertaidlservice-V1-ndk \
-    vendor.qti.hardware.camera.postproc-V1-ndk \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.capabilityconfigstore-V1-ndk \
     vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk \
@@ -1772,15 +1771,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom-V1-ndk.system_ext \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qseecom@1.0.system_ext \
-    vendor.qti.hardware.qspa-V1-ndk \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.qteeconnector@1.0.system_ext \
     vendor.qti.hardware.servicetracker@1.0 \
     vendor.qti.hardware.servicetracker@1.1 \
-    vendor.qti.hardware.servicetrackeraidl-V1-ndk \
     vendor.qti.hardware.soter-V1-ndk \
     vendor.qti.hardware.systemhelper@1.0 \
-    vendor.qti.hardware.systemhelperaidl-V1-ndk \
     vendor.qti.hardware.trustedui-V1-ndk \
     vendor.qti.hardware.trustedui-V1-ndk.system_ext \
     vendor.qti.hardware.trustedui@1.0 \
