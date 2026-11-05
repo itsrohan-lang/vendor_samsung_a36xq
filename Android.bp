@@ -34,28 +34,7 @@ cc_prebuilt_library_shared {
     prefer: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libaconfig_storage_read_api_cc",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libaconfig_storage_read_api_cc.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
+
 
 cc_prebuilt_library_shared {
     name: "libarcsoft_photoeditor.arcsoft",
@@ -282,84 +261,11 @@ cc_prebuilt_library_shared {
     prefer: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libmpbase",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libmpbase.so",
-            ],
-            shared_libs: [
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libstagefright_aidl_bufferpool2",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_aidl_bufferpool2.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libnativewindow",
-                "libutils",
-                "android.hardware.media.bufferpool2-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
 
-cc_prebuilt_library_shared {
-    name: "libstagefright_bufferpool@2.0.1",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_bufferpool@2.0.1.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "android.hardware.media.bufferpool@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
+
+
+
 
 cc_prebuilt_library_shared {
     name: "libstagefright_codecbase",
@@ -614,30 +520,7 @@ cc_prebuilt_library_shared {
     prefer: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.qti.diaghal-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/vendor.qti.diaghal-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
+
 
 cc_prebuilt_library_shared {
     name: "vendor.qti.gnss-V8-cpp",
@@ -688,30 +571,7 @@ cc_prebuilt_library_shared {
     prefer: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
+
 
 cc_prebuilt_library_shared {
     name: "aidl_libtlc_comm_iccc",
@@ -5552,7 +5412,9 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libEGL_adreno",
+    name: "libEGL_adreno.egl",
+    stem: "libEGL_adreno",
+    relative_install_path: "egl",
     owner: "samsung",
     strip: {
         none: true,
@@ -5611,7 +5473,9 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libGLESv2_adreno",
+    name: "libGLESv2_adreno.egl",
+    stem: "libGLESv2_adreno",
+    relative_install_path: "egl",
     owner: "samsung",
     strip: {
         none: true,
@@ -5668,7 +5532,9 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libq3dtools_adreno",
+    name: "libq3dtools_adreno.egl",
+    stem: "libq3dtools_adreno",
+    relative_install_path: "egl",
     owner: "samsung",
     strip: {
         none: true,
@@ -31766,7 +31632,8 @@ prebuilt_rfsa {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.imscmservice@2.0",
+    name: "com.qualcomm.qti.imscmservice@2.0.system_ext",
+    stem: "com.qualcomm.qti.imscmservice@2.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -31794,7 +31661,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.imscmservice@2.1",
+    name: "com.qualcomm.qti.imscmservice@2.1.system_ext",
+    stem: "com.qualcomm.qti.imscmservice@2.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -31823,7 +31691,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.imscmservice@2.2",
+    name: "com.qualcomm.qti.imscmservice@2.2.system_ext",
+    stem: "com.qualcomm.qti.imscmservice@2.2",
     owner: "samsung",
     strip: {
         none: true,
@@ -31853,7 +31722,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.uceservice@2.0",
+    name: "com.qualcomm.qti.uceservice@2.0.system_ext",
+    stem: "com.qualcomm.qti.uceservice@2.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -31881,7 +31751,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.uceservice@2.1",
+    name: "com.qualcomm.qti.uceservice@2.1.system_ext",
+    stem: "com.qualcomm.qti.uceservice@2.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -31910,7 +31781,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.uceservice@2.2",
+    name: "com.qualcomm.qti.uceservice@2.2.system_ext",
+    stem: "com.qualcomm.qti.uceservice@2.2",
     owner: "samsung",
     strip: {
         none: true,
@@ -31940,7 +31812,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.uceservice@2.3",
+    name: "com.qualcomm.qti.uceservice@2.3.system_ext",
+    stem: "com.qualcomm.qti.uceservice@2.3",
     owner: "samsung",
     strip: {
         none: true,
@@ -32260,7 +32133,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.0",
+    name: "vendor.display.color@1.0.system_ext",
+    stem: "vendor.display.color@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -32288,7 +32162,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.1",
+    name: "vendor.display.color@1.1.system_ext",
+    stem: "vendor.display.color@1.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -32317,7 +32192,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.2",
+    name: "vendor.display.color@1.2.system_ext",
+    stem: "vendor.display.color@1.2",
     owner: "samsung",
     strip: {
         none: true,
@@ -32347,7 +32223,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.3",
+    name: "vendor.display.color@1.3.system_ext",
+    stem: "vendor.display.color@1.3",
     owner: "samsung",
     strip: {
         none: true,
@@ -32378,7 +32255,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.config@1.0",
+    name: "vendor.display.config@1.0.system_ext",
+    stem: "vendor.display.config@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -32406,7 +32284,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.config@1.1",
+    name: "vendor.display.config@1.1.system_ext",
+    stem: "vendor.display.config@1.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -32435,7 +32314,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.config@1.2",
+    name: "vendor.display.config@1.2.system_ext",
+    stem: "vendor.display.config@1.2",
     owner: "samsung",
     strip: {
         none: true,
@@ -32465,7 +32345,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.config@1.3",
+    name: "vendor.display.config@1.3.system_ext",
+    stem: "vendor.display.config@1.3",
     owner: "samsung",
     strip: {
         none: true,
@@ -32496,7 +32377,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.config@1.4",
+    name: "vendor.display.config@1.4.system_ext",
+    stem: "vendor.display.config@1.4",
     owner: "samsung",
     strip: {
         none: true,
@@ -32528,7 +32410,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.config@1.5",
+    name: "vendor.display.config@1.5.system_ext",
+    stem: "vendor.display.config@1.5",
     owner: "samsung",
     strip: {
         none: true,
@@ -32561,7 +32444,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.config@2.0",
+    name: "vendor.display.config@2.0.system_ext",
+    stem: "vendor.display.config@2.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -32589,7 +32473,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.postproc@1.0",
+    name: "vendor.display.postproc@1.0.system_ext",
+    stem: "vendor.display.postproc@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -33061,7 +32946,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.data.mwqem@1.0",
+    name: "vendor.qti.data.mwqem@1.0.system_ext",
+    stem: "vendor.qti.data.mwqem@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -33089,7 +32975,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.data.slm@1.0",
+    name: "vendor.qti.data.slm@1.0.system_ext",
+    stem: "vendor.qti.data.slm@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -33117,7 +33004,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.diaghal@1.0",
+    name: "vendor.qti.diaghal@1.0.system_ext",
+    stem: "vendor.qti.diaghal@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -33380,7 +33268,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.connection@1.0",
+    name: "vendor.qti.hardware.data.connection@1.0.system_ext",
+    stem: "vendor.qti.hardware.data.connection@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -33408,7 +33297,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.connection@1.1",
+    name: "vendor.qti.hardware.data.connection@1.1.system_ext",
+    stem: "vendor.qti.hardware.data.connection@1.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -33437,7 +33327,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.connectionfactory-V1-ndk",
+    name: "vendor.qti.hardware.data.connectionfactory-V1-ndk.system_ext",
+    stem: "vendor.qti.hardware.data.connectionfactory-V1-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -33464,7 +33355,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.dataactivity-V1-ndk",
+    name: "vendor.qti.hardware.data.dataactivity-V1-ndk.system_ext",
+    stem: "vendor.qti.hardware.data.dataactivity-V1-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -33489,7 +33381,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.dynamicdds@1.0",
+    name: "vendor.qti.hardware.data.dynamicdds@1.0.system_ext",
+    stem: "vendor.qti.hardware.data.dynamicdds@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -33517,7 +33410,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.dynamicdds@1.1",
+    name: "vendor.qti.hardware.data.dynamicdds@1.1.system_ext",
+    stem: "vendor.qti.hardware.data.dynamicdds@1.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -33546,7 +33440,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.flow@1.0",
+    name: "vendor.qti.hardware.data.flow@1.0.system_ext",
+    stem: "vendor.qti.hardware.data.flow@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -33574,7 +33469,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.flow@1.1",
+    name: "vendor.qti.hardware.data.flow@1.1.system_ext",
+    stem: "vendor.qti.hardware.data.flow@1.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -33700,7 +33596,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.ka-V1-ndk",
+    name: "vendor.qti.hardware.data.ka-V1-ndk.system_ext",
+    stem: "vendor.qti.hardware.data.ka-V1-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -33725,7 +33622,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.latency@1.0",
+    name: "vendor.qti.hardware.data.latency@1.0.system_ext",
+    stem: "vendor.qti.hardware.data.latency@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -33753,7 +33651,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.data.lce@1.0",
+    name: "vendor.qti.hardware.data.lce@1.0.system_ext",
+    stem: "vendor.qti.hardware.data.lce@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -33880,7 +33779,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.display.config-V1-ndk",
+    name: "vendor.qti.hardware.display.config-V1-ndk.system_ext",
+    stem: "vendor.qti.hardware.display.config-V1-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -33906,7 +33806,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.display.config-V10-ndk",
+    name: "vendor.qti.hardware.display.config-V10-ndk.system_ext",
+    stem: "vendor.qti.hardware.display.config-V10-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -33932,7 +33833,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.display.config-V11-ndk",
+    name: "vendor.qti.hardware.display.config-V11-ndk.system_ext",
+    stem: "vendor.qti.hardware.display.config-V11-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -34140,7 +34042,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.display.config-V2-ndk",
+    name: "vendor.qti.hardware.display.config-V2-ndk.system_ext",
+    stem: "vendor.qti.hardware.display.config-V2-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -34166,7 +34069,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.display.config-V3-ndk",
+    name: "vendor.qti.hardware.display.config-V3-ndk.system_ext",
+    stem: "vendor.qti.hardware.display.config-V3-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -34192,7 +34096,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.display.config-V4-ndk",
+    name: "vendor.qti.hardware.display.config-V4-ndk.system_ext",
+    stem: "vendor.qti.hardware.display.config-V4-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -34218,7 +34123,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.display.config-V5-ndk",
+    name: "vendor.qti.hardware.display.config-V5-ndk.system_ext",
+    stem: "vendor.qti.hardware.display.config-V5-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -34244,7 +34150,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.display.config-V6-ndk",
+    name: "vendor.qti.hardware.display.config-V6-ndk.system_ext",
+    stem: "vendor.qti.hardware.display.config-V6-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -34270,7 +34177,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.display.config-V7-ndk",
+    name: "vendor.qti.hardware.display.config-V7-ndk.system_ext",
+    stem: "vendor.qti.hardware.display.config-V7-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -34296,7 +34204,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.display.config-V8-ndk",
+    name: "vendor.qti.hardware.display.config-V8-ndk.system_ext",
+    stem: "vendor.qti.hardware.display.config-V8-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -34322,7 +34231,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.display.config-V9-ndk",
+    name: "vendor.qti.hardware.display.config-V9-ndk.system_ext",
+    stem: "vendor.qti.hardware.display.config-V9-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -34348,7 +34258,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.iop@2.0",
+    name: "vendor.qti.hardware.iop@2.0.system_ext",
+    stem: "vendor.qti.hardware.iop@2.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -34463,7 +34374,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.perf@2.0",
+    name: "vendor.qti.hardware.perf@2.0.system_ext",
+    stem: "vendor.qti.hardware.perf@2.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -34491,7 +34403,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.perf@2.1",
+    name: "vendor.qti.hardware.perf@2.1.system_ext",
+    stem: "vendor.qti.hardware.perf@2.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -34520,7 +34433,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.perf@2.2",
+    name: "vendor.qti.hardware.perf@2.2.system_ext",
+    stem: "vendor.qti.hardware.perf@2.2",
     owner: "samsung",
     strip: {
         none: true,
@@ -34731,7 +34645,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qdutils_disp@1.0",
+    name: "vendor.qti.hardware.qdutils_disp@1.0.system_ext",
+    stem: "vendor.qti.hardware.qdutils_disp@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -34759,7 +34674,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qseecom-V1-ndk",
+    name: "vendor.qti.hardware.qseecom-V1-ndk.system_ext",
+    stem: "vendor.qti.hardware.qseecom-V1-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -34785,7 +34701,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qseecom@1.0",
+    name: "vendor.qti.hardware.qseecom@1.0.system_ext",
+    stem: "vendor.qti.hardware.qseecom@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -34839,7 +34756,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.qteeconnector@1.0",
+    name: "vendor.qti.hardware.qteeconnector@1.0.system_ext",
+    stem: "vendor.qti.hardware.qteeconnector@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -34923,7 +34841,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.trustedui-V1-ndk",
+    name: "vendor.qti.hardware.trustedui-V1-ndk.system_ext",
+    stem: "vendor.qti.hardware.trustedui-V1-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -34949,7 +34868,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.trustedui@1.0",
+    name: "vendor.qti.hardware.trustedui@1.0.system_ext",
+    stem: "vendor.qti.hardware.trustedui@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -35031,7 +34951,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.vpp@1.1",
+    name: "vendor.qti.hardware.vpp@1.1.system_ext",
+    stem: "vendor.qti.hardware.vpp@1.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -35059,7 +34980,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wigig.netperftuner@1.0",
+    name: "vendor.qti.hardware.wigig.netperftuner@1.0.system_ext",
+    stem: "vendor.qti.hardware.wigig.netperftuner@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -35115,7 +35037,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.ims.callcapability@1.0",
+    name: "vendor.qti.ims.callcapability@1.0.system_ext",
+    stem: "vendor.qti.ims.callcapability@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -35143,7 +35066,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.ims.callinfo@1.0",
+    name: "vendor.qti.ims.callinfo@1.0.system_ext",
+    stem: "vendor.qti.ims.callinfo@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -35428,7 +35352,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.ims.rcsconfig@1.0",
+    name: "vendor.qti.ims.rcsconfig@1.0.system_ext",
+    stem: "vendor.qti.ims.rcsconfig@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -35456,7 +35381,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.ims.rcsconfig@1.1",
+    name: "vendor.qti.ims.rcsconfig@1.1.system_ext",
+    stem: "vendor.qti.ims.rcsconfig@1.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -35485,7 +35411,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.ims.rcsconfig@2.0",
+    name: "vendor.qti.ims.rcsconfig@2.0.system_ext",
+    stem: "vendor.qti.ims.rcsconfig@2.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -35513,7 +35440,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.ims.rcsconfig@2.1",
+    name: "vendor.qti.ims.rcsconfig@2.1.system_ext",
+    stem: "vendor.qti.ims.rcsconfig@2.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -35773,7 +35701,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.latency@2.0",
+    name: "vendor.qti.latency@2.0.system_ext",
+    stem: "vendor.qti.latency@2.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -35801,7 +35730,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.latency@2.1",
+    name: "vendor.qti.latency@2.1.system_ext",
+    stem: "vendor.qti.latency@2.1",
     owner: "samsung",
     strip: {
         none: true,
@@ -35830,7 +35760,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.latency@2.2",
+    name: "vendor.qti.latency@2.2.system_ext",
+    stem: "vendor.qti.latency@2.2",
     owner: "samsung",
     strip: {
         none: true,
@@ -35893,7 +35824,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qccvndhal_aidl-V1-ndk",
+    name: "vendor.qti.qccvndhal_aidl-V1-ndk.system_ext",
+    stem: "vendor.qti.qccvndhal_aidl-V1-ndk",
     owner: "samsung",
     strip: {
         none: true,
@@ -35947,7 +35879,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qspmhal-V1-ndk",
+    name: "vendor.qti.qspmhal-V1-ndk.system_ext",
+    stem: "vendor.qti.qspmhal-V1-ndk",
     owner: "samsung",
     strip: {
         none: true,

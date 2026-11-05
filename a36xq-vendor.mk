@@ -929,19 +929,29 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
+    com.qualcomm.qti.imscmservice@2.0.system_ext \
     com.qualcomm.qti.imscmservice@2.1 \
+    com.qualcomm.qti.imscmservice@2.1.system_ext \
     com.qualcomm.qti.imscmservice@2.2 \
+    com.qualcomm.qti.imscmservice@2.2.system_ext \
     com.qualcomm.qti.mcx.usecase.extension \
     com.qualcomm.qti.uceservice@2.0 \
+    com.qualcomm.qti.uceservice@2.0.system_ext \
     com.qualcomm.qti.uceservice@2.1 \
+    com.qualcomm.qti.uceservice@2.1.system_ext \
     com.qualcomm.qti.uceservice@2.2 \
+    com.qualcomm.qti.uceservice@2.2.system_ext \
     com.qualcomm.qti.uceservice@2.3 \
+    com.qualcomm.qti.uceservice@2.3.system_ext \
     eglSubDriverAndroid \
     libEGL_adreno \
+    libEGL_adreno.egl \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
+    libGLESv2_adreno.egl \
     libVkLayer_ADRENO_qprofiler \
     libq3dtools_adreno \
+    libq3dtools_adreno.egl \
     libq3dtools_esx \
     framework-permission-aidl-cpp \
     android.hardware.renderscript@1.0-impl \
@@ -1637,33 +1647,48 @@ PRODUCT_PACKAGES += \
     unihal_scenario \
     unihal_uniplugin@1.0 \
     vendor.display.color@1.0 \
+    vendor.display.color@1.0.system_ext \
     vendor.display.color@1.1 \
+    vendor.display.color@1.1.system_ext \
     vendor.display.color@1.2 \
+    vendor.display.color@1.2.system_ext \
     vendor.display.color@1.3 \
+    vendor.display.color@1.3.system_ext \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.config@1.0 \
+    vendor.display.config@1.0.system_ext \
     vendor.display.config@1.1 \
+    vendor.display.config@1.1.system_ext \
     vendor.display.config@1.10 \
     vendor.display.config@1.11 \
     vendor.display.config@1.2 \
+    vendor.display.config@1.2.system_ext \
     vendor.display.config@1.3 \
+    vendor.display.config@1.3.system_ext \
     vendor.display.config@1.4 \
+    vendor.display.config@1.4.system_ext \
     vendor.display.config@1.5 \
+    vendor.display.config@1.5.system_ext \
     vendor.display.config@1.6 \
     vendor.display.config@1.7 \
     vendor.display.config@1.8 \
     vendor.display.config@1.9 \
     vendor.display.config@2.0 \
+    vendor.display.config@2.0.system_ext \
     vendor.display.postproc@1.0 \
+    vendor.display.postproc@1.0.system_ext \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.MemHal-V1-ndk \
     vendor.qti.data.factoryservice-V1-ndk \
     vendor.qti.data.mwqem@1.0 \
+    vendor.qti.data.mwqem@1.0.system_ext \
     vendor.qti.data.mwqemaidlservice-V1-ndk \
     vendor.qti.data.slm@1.0 \
+    vendor.qti.data.slm@1.0.system_ext \
     vendor.qti.diaghal-V1-ndk \
     vendor.qti.diaghal@1.0 \
+    vendor.qti.diaghal@1.0.system_ext \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.gnss-V7-ndk \
     vendor.qti.gnss-service \
@@ -1683,18 +1708,29 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-ndk \
     vendor.qti.hardware.data.cneaidlservice.internal.server-V1-ndk \
     vendor.qti.hardware.data.connection@1.0 \
+    vendor.qti.hardware.data.connection@1.0.system_ext \
     vendor.qti.hardware.data.connection@1.1 \
+    vendor.qti.hardware.data.connection@1.1.system_ext \
     vendor.qti.hardware.data.connectionfactory-V1-ndk \
+    vendor.qti.hardware.data.connectionfactory-V1-ndk.system_ext \
     vendor.qti.hardware.data.dataactivity-V1-ndk \
+    vendor.qti.hardware.data.dataactivity-V1-ndk.system_ext \
     vendor.qti.hardware.data.dynamicdds@1.0 \
+    vendor.qti.hardware.data.dynamicdds@1.0.system_ext \
     vendor.qti.hardware.data.dynamicdds@1.1 \
+    vendor.qti.hardware.data.dynamicdds@1.1.system_ext \
     vendor.qti.hardware.data.dynamicddsaidlservice-V1-ndk \
     vendor.qti.hardware.data.flow@1.0 \
+    vendor.qti.hardware.data.flow@1.0.system_ext \
     vendor.qti.hardware.data.flow@1.1 \
+    vendor.qti.hardware.data.flow@1.1.system_ext \
     vendor.qti.hardware.data.flowaidlservice-V1-ndk \
     vendor.qti.hardware.data.ka-V1-ndk \
+    vendor.qti.hardware.data.ka-V1-ndk.system_ext \
     vendor.qti.hardware.data.latency@1.0 \
+    vendor.qti.hardware.data.latency@1.0.system_ext \
     vendor.qti.hardware.data.lce@1.0 \
+    vendor.qti.hardware.data.lce@1.0.system_ext \
     vendor.qti.hardware.data.lceaidlservice-V1-ndk \
     vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
     vendor.qti.hardware.display.allocator@1.0 \
@@ -1706,16 +1742,27 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer@1.0 \
     vendor.qti.hardware.display.composer@2.0 \
     vendor.qti.hardware.display.config-V1-ndk \
+    vendor.qti.hardware.display.config-V1-ndk.system_ext \
     vendor.qti.hardware.display.config-V10-ndk \
+    vendor.qti.hardware.display.config-V10-ndk.system_ext \
     vendor.qti.hardware.display.config-V11-ndk \
+    vendor.qti.hardware.display.config-V11-ndk.system_ext \
     vendor.qti.hardware.display.config-V2-ndk \
+    vendor.qti.hardware.display.config-V2-ndk.system_ext \
     vendor.qti.hardware.display.config-V3-ndk \
+    vendor.qti.hardware.display.config-V3-ndk.system_ext \
     vendor.qti.hardware.display.config-V4-ndk \
+    vendor.qti.hardware.display.config-V4-ndk.system_ext \
     vendor.qti.hardware.display.config-V5-ndk \
+    vendor.qti.hardware.display.config-V5-ndk.system_ext \
     vendor.qti.hardware.display.config-V6-ndk \
+    vendor.qti.hardware.display.config-V6-ndk.system_ext \
     vendor.qti.hardware.display.config-V7-ndk \
+    vendor.qti.hardware.display.config-V7-ndk.system_ext \
     vendor.qti.hardware.display.config-V8-ndk \
+    vendor.qti.hardware.display.config-V8-ndk.system_ext \
     vendor.qti.hardware.display.config-V9-ndk \
+    vendor.qti.hardware.display.config-V9-ndk.system_ext \
     vendor.qti.hardware.display.demura-V1-ndk \
     vendor.qti.hardware.display.mapper@1.0 \
     vendor.qti.hardware.display.mapper@1.1 \
@@ -1733,17 +1780,25 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
+    vendor.qti.hardware.iop@2.0.system_ext \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
     vendor.qti.hardware.pal-V1-ndk \
     vendor.qti.hardware.perf2-V1-ndk \
     vendor.qti.hardware.perf@2.0 \
+    vendor.qti.hardware.perf@2.0.system_ext \
     vendor.qti.hardware.perf@2.1 \
+    vendor.qti.hardware.perf@2.1.system_ext \
     vendor.qti.hardware.perf@2.2 \
+    vendor.qti.hardware.perf@2.2.system_ext \
     vendor.qti.hardware.qdutils_disp@1.0 \
+    vendor.qti.hardware.qdutils_disp@1.0.system_ext \
     vendor.qti.hardware.qseecom-V1-ndk \
+    vendor.qti.hardware.qseecom-V1-ndk.system_ext \
     vendor.qti.hardware.qseecom@1.0 \
+    vendor.qti.hardware.qseecom@1.0.system_ext \
     vendor.qti.hardware.qspa-V1-ndk \
     vendor.qti.hardware.qteeconnector@1.0 \
+    vendor.qti.hardware.qteeconnector@1.0.system_ext \
     vendor.qti.hardware.servicetracker@1.0 \
     vendor.qti.hardware.servicetracker@1.1 \
     vendor.qti.hardware.servicetrackeraidl-V1-ndk \
@@ -1751,39 +1806,54 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.systemhelper@1.0 \
     vendor.qti.hardware.systemhelperaidl-V1-ndk \
     vendor.qti.hardware.trustedui-V1-ndk \
+    vendor.qti.hardware.trustedui-V1-ndk.system_ext \
     vendor.qti.hardware.trustedui@1.0 \
+    vendor.qti.hardware.trustedui@1.0.system_ext \
     vendor.qti.hardware.vpp@1.1 \
+    vendor.qti.hardware.vpp@1.1.system_ext \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.vpp@2.0 \
     vendor.qti.hardware.wigig.netperftuner@1.0 \
+    vendor.qti.hardware.wigig.netperftuner@1.0.system_ext \
     vendor.qti.ims.callcapability@1.0 \
+    vendor.qti.ims.callcapability@1.0.system_ext \
     vendor.qti.ims.callcapabilityaidlservice-V1-ndk \
     vendor.qti.ims.callinfo@1.0 \
+    vendor.qti.ims.callinfo@1.0.system_ext \
     vendor.qti.ims.configaidlservice-V1-ndk \
     vendor.qti.ims.connectionaidlservice-V1-ndk \
     vendor.qti.ims.factoryaidlservice-V1-ndk \
     vendor.qti.ims.rcsconfig@1.0 \
+    vendor.qti.ims.rcsconfig@1.0.system_ext \
     vendor.qti.ims.rcsconfig@1.1 \
+    vendor.qti.ims.rcsconfig@1.1.system_ext \
     vendor.qti.ims.rcsconfig@2.0 \
+    vendor.qti.ims.rcsconfig@2.0.system_ext \
     vendor.qti.ims.rcsconfig@2.1 \
+    vendor.qti.ims.rcsconfig@2.1.system_ext \
     vendor.qti.ims.rcssipaidlservice-V1-ndk \
     vendor.qti.ims.rcsuceaidlservice-V1-ndk \
     vendor.qti.latency@2.0 \
+    vendor.qti.latency@2.0.system_ext \
     vendor.qti.latency@2.1 \
+    vendor.qti.latency@2.1.system_ext \
     vendor.qti.latency@2.2 \
+    vendor.qti.latency@2.2.system_ext \
     vendor.qti.latencyaidlservice-V1-ndk \
     vendor.qti.memory.pasrmanager-V1-ndk \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.power.pasrmanager@1.0 \
     vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccvndhal_aidl-V1-ndk \
+    vendor.qti.qccvndhal_aidl-V1-ndk.system_ext \
     vendor.qti.qccvndhal_aidl-halimpl \
     vendor.qti.qesdhal@1.0 \
     vendor.qti.qesdhal@1.1 \
     vendor.qti.qesdhal@1.2 \
     vendor.qti.qesdhal@1.3 \
     vendor.qti.qspmhal-V1-ndk \
+    vendor.qti.qspmhal-V1-ndk.system_ext \
     vendor.qti.snapdragonServices-V1-ndk \
     vendor.qti.snapdragonServices.qape-V1-ndk \
     vendor.samsung.hardware.audio-V1-ndk \
