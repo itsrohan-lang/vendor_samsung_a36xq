@@ -660,65 +660,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audioclient-types-aidl-cpp",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/audioclient-types-aidl-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "android.media.audio.common.types-V3-cpp",
-                "framework-permission-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audiopolicy-types-aidl-cpp",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/audiopolicy-types-aidl-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "android.media.audio.common.types-V3-cpp",
-                "audioclient-types-aidl-cpp",
-                "framework-permission-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "samsung",
     strip: {
@@ -24231,31 +24172,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "qti-audio-types-aidl-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/qti-audio-types-aidl-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "qti.video.utils.videobufferlayout",
     owner: "samsung",
     strip: {
@@ -25378,35 +25294,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "spatializer-aidl-cpp",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/spatializer-aidl-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "android.media.audio.common.types-V3-cpp",
-                "audiopolicy-types-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }

@@ -801,8 +801,6 @@ PRODUCT_PACKAGES += \
     aidl_libtlc_comm_iccc \
     aidl_libtlc_direct_comm_iccc \
     android.hardware.bluetooth.audio-impl \
-    audioclient-types-aidl-cpp \
-    audiopolicy-types-aidl-cpp \
     btaudio_offload_if \
     camera.device@1.0-impl \
     com.qti.eeprom.gt24p128c2csli_imx766 \
@@ -1586,7 +1584,6 @@ PRODUCT_PACKAGES += \
     libclearkeycasplugin \
     libdrmclearkeyplugin \
     nfc_nci_nxpsn \
-    qti-audio-types-aidl-V1-ndk \
     qti.video.utils.videobufferlayout \
     libSnpeHtpV73Skel \
     libadsp_jpege_skel \
@@ -1625,7 +1622,6 @@ PRODUCT_PACKAGES += \
     libswspatializer \
     libswspatializeraidl \
     libvisualizeraidl \
-    spatializer-aidl-cpp \
     unihal_android \
     unihal_cutils \
     unihal_entry \
