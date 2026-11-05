@@ -1949,7 +1949,6 @@ PRODUCT_PACKAGES += \
     agmplay \
     agmvoiceui \
     applypatch \
-    ar_util_in_test_example \
     athdiag \
     audioflacapp \
     boringssl_self_test64 \

@@ -31793,33 +31793,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "ar_util_in_test_example",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/ar_util_in_test_example",
-            ],
-            shared_libs: [
-                "liblog",
-                "liblx-ar_util",
-                "liblx-osal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "athdiag",
     owner: "samsung",
     target: {
