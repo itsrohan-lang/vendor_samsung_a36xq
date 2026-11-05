@@ -1502,7 +1502,6 @@ PRODUCT_PACKAGES += \
     libsysmon_cdsp_skel \
     libtestutils \
     libtfestriping \
-    libtflite \
     libthermalclient \
     libthreadutils \
     libtime_genoff \
