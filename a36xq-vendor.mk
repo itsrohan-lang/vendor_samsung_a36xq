@@ -1401,7 +1401,6 @@ PRODUCT_PACKAGES += \
     libsehbluetooth_audio_session_aidl \
     libsemnativecarrierfeature \
     libsensorlistener \
-    libsensorndkbridge \
     libsensorslog \
     libsfeShiftExtrapolation \
     libsfp_sensor \
@@ -2010,7 +2009,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service \
     android.hardware.sensors-service.multihal \
     android.hardware.weaver-service-spu-qti \
-    android.hardware.wifi-service \
     audiohalservice.qti \
     hostapd \
     macloader \
@@ -2051,7 +2049,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.ucm-service \
     vendor.samsung.hardware.vibrator-service \
     vendor.samsung.hardware.wifi-service \
-    wpa_supplicant \
     iod \
     ipacm-diag \
     irsc_util \
@@ -2179,3 +2176,12 @@ PRODUCT_COPY_FILES += \
 # Samsung system protobuf (see the module in Android.bp)
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-6.33.5
+
+# Binaries/libs excluded from Soong due to AIDL version conflicts with Android 15 PixelOS.
+# These declare old AIDL versions (wifi.common-V1, sensors-V2, wifi.supplicant-V3) but
+# PixelOS builds newer source variants that cause "multiple AIDL versions" Soong errors.
+# Installed verbatim from the Samsung vendor image.
+PRODUCT_COPY_FILES += \
+    vendor/samsung/a36xq/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
+    vendor/samsung/a36xq/proprietary/vendor/bin/hw/android.hardware.wifi-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi-service \
+    vendor/samsung/a36xq/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant

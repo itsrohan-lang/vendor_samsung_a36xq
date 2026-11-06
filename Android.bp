@@ -19132,34 +19132,9 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libsensorndkbridge",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsensorndkbridge.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "libutils",
-                "android.frameworks.sensorservice-V1-ndk",
-                "android.hardware.sensors-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
+// libsensorndkbridge: removed from Soong - prebuilt declares android.hardware.sensors-V2-ndk
+// but android.frameworks.sensorservice-V1-ndk transitively pulls V3-ndk (PixelOS Android 15).
+// Installed as PRODUCT_COPY_FILES via proprietary-files.txt (-prefix).
 
 cc_prebuilt_library_shared {
     name: "libsensorslog",
@@ -33728,41 +33703,10 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "android.hardware.wifi-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.wifi-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "liblog",
-                "libnl",
-                "libutils",
-                "libwifi-hal",
-                "libwifi-system-iface",
-                "libxml2",
-                "vendor.samsung.hardware.wifi.nan-V1-ndk",
-                "android.hardware.wifi-V2-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
+// android.hardware.wifi-service: removed from Soong - prebuilt declares android.hardware.wifi-V2-ndk
+// which requires wifi.common-V1-ndk, but source android.hardware.wifi-service-lib (Android 15 PixelOS)
+// requires wifi.common-V2-ndk causing "multiple AIDL versions" conflict.
+// Installed as PRODUCT_COPY_FILES via proprietary-files.txt (-prefix).
 
 cc_prebuilt_binary {
     name: "audiohalservice.qti",
@@ -35131,43 +35075,10 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "wpa_supplicant",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/wpa_supplicant",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libcrypto",
-                "libssl",
-                "libkeystore-engine-wifi-hidl",
-                "libnl",
-                "android.hardware.wifi.supplicant-V3-ndk",
-                "vendor.samsung.hardware.wifi.supplicant-V1-ndk",
-                "android.system.keystore2-V1-ndk",
-                "libutils",
-                "libbase",
-                "libbinder_ndk",
-                "libsecnativefeature",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
+// wpa_supplicant: removed from Soong - prebuilt declares android.hardware.wifi.supplicant-V3-ndk
+// but source libwpa_aidl (Android 15 PixelOS) requires V5-ndk causing "multiple AIDL versions" conflict.
+// Also triggers wifi.common-V1/V2 conflict via supplicant-V3 → wifi.common-V1 path.
+// Installed as PRODUCT_COPY_FILES via proprietary-files.txt (-prefix).
 
 cc_prebuilt_binary {
     name: "iod",
