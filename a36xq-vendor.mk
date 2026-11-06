@@ -1007,6 +1007,7 @@ PRODUCT_PACKAGES += \
     libOpenCL_adreno \
     libOpenCv.camera.samsung \
     libQSEEComAPI \
+    libQSEEComAPI_system \
     libQcelp13SwCodec \
     libSEF.quram \
     libSNPE \
