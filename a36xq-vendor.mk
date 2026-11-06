@@ -799,6 +799,7 @@ PRODUCT_PACKAGES += \
     aidl_libtlc_direct_comm_iccc \
     android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth@1.0-impl-qti \
+    android.hardware.gnss-aidl-impl-qti \
     btaudio_offload_if \
     camera.device@1.0-impl \
     com.qti.eeprom.gt24p128c2csli_imx766 \

@@ -671,6 +671,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.gnss-aidl-impl-qti",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so",
+            ],
+            shared_libs: [
+                "android.hardware.gnss-V4-ndk",
+                "android.hardware.health-V1-ndk",
+                "android.hardware.health@1.0",
+                "android.hardware.health@2.0",
+                "android.hardware.health@2.1",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libgps.utils",
+                "libhidlbase",
+                "libloc_core",
+                "liblocation_api",
+                "liblog",
+                "libqti_vndfwk_detect_vendor",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "samsung",
     strip: {
