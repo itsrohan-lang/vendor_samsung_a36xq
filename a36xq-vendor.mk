@@ -1611,6 +1611,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lceaidlservice-V1-ndk \
     vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
     vendor.qti.hardware.display.color-V1-ndk \
+    vendor.qti.hardware.display.config-V2-ndk \
     vendor.qti.hardware.display.config-V5-ndk \
     vendor.qti.hardware.display.config-V7-ndk \
     vendor.qti.hardware.display.postproc-V1-ndk \
