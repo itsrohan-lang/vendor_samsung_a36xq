@@ -21820,8 +21820,9 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libz_stable",
+    name: "libz_stable_samsung",
     owner: "samsung",
+    stem: "libz_stable",
     strip: {
         none: true,
     },
@@ -32145,7 +32146,7 @@ cc_prebuilt_binary {
                 "libbase",
                 "libcrypto",
                 "liblog",
-                "libz_stable",
+                "libz_stable_samsung",
                 "libziparchive",
                 "libc++",
                 "libc",
