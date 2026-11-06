@@ -1999,7 +1999,6 @@ PRODUCT_PACKAGES += \
     hermesd \
     hostapd_cli \
     android.hardware.bluetooth@aidl-service-qti \
-    android.hardware.drm-service.clearkey \
     android.hardware.dumpstate-service \
     android.hardware.gatekeeper-service \
     android.hardware.gnss-aidl-service-qti \
@@ -2184,4 +2183,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/a36xq/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
     vendor/samsung/a36xq/proprietary/vendor/bin/hw/android.hardware.wifi-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi-service \
-    vendor/samsung/a36xq/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant
+    vendor/samsung/a36xq/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
+    vendor/samsung/a36xq/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey

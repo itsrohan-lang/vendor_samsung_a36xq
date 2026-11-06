@@ -33364,37 +33364,10 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-cc_prebuilt_binary {
-    name: "android.hardware.drm-service.clearkey",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "libcrypto",
-                "liblog",
-                "libprotobuf-cpp-lite-21.12",
-                "libutils",
-                "android.hardware.drm-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
+// android.hardware.drm-service.clearkey: removed from Soong - prebuilt declares drm-V1-ndk
+// but PixelOS Android 15 source (frameworks/av/.../clearkey/aidl) builds drm-V2-ndk,
+// causing "multiple AIDL versions" conflict (drm-V1-ndk-source, drm-V2-ndk-source).
+// Installed as PRODUCT_COPY_FILES via proprietary-files.txt (-prefix).
 
 cc_prebuilt_binary {
     name: "android.hardware.dumpstate-service",
