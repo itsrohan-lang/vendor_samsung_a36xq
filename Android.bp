@@ -30836,15 +30836,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "manifest_audiocorehal_default.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_audiocorehal_default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "manifest_btaudiocoreservices_qti.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_btaudiocoreservices_qti.xml",
