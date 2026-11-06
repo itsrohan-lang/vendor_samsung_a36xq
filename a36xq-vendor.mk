@@ -1608,6 +1608,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
     vendor.qti.hardware.display.color-V1-ndk \
     vendor.qti.hardware.display.config-V7-ndk \
+    vendor.qti.hardware.display.postproc-V1-ndk \
     vendor.qti.hardware.display.snapalloc-impl \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dsp-V1-ndk \
