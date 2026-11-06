@@ -1862,7 +1862,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service.xml \
     android.hardware.wifi.hostapd.xml \
     android.hardware.wifi.supplicant.xml \
-    audioeffectservice_qti.xml \
     bluetooth_hci.xml \
     c2_manifest_vendor_audio.xml \
     cacert-saidl.xml \

@@ -30728,15 +30728,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "audioeffectservice_qti.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/audioeffectservice_qti.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "bluetooth_hci.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/bluetooth_hci.xml",
