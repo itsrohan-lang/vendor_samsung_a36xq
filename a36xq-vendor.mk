@@ -1498,6 +1498,7 @@ PRODUCT_PACKAGES += \
     libwsmd_functions \
     libxml \
     libxtadapter \
+    libz_stable \
     libzoomroi.samsung \
     libzoomroi_lite.samsung \
     libclearkeycasplugin \
