@@ -798,6 +798,7 @@ PRODUCT_PACKAGES += \
     aidl_libtlc_comm_iccc \
     aidl_libtlc_direct_comm_iccc \
     android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@aidl-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
