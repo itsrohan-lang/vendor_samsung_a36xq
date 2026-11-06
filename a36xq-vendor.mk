@@ -1275,6 +1275,8 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libplatformconfig \
     libprofileparamstorage \
+    libprotobuf-cpp-full-21.12 \
+    libprotobuf-cpp-lite-21.12 \
     libq-perflog \
     libq3dtools_adreno \
     libqc2audio_base \
@@ -1604,6 +1606,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.lce@1.0.system_ext \
     vendor.qti.hardware.data.lceaidlservice-V1-ndk \
     vendor.qti.hardware.data.qmiaidlservice-V1-ndk \
+    vendor.qti.hardware.display.color-V1-ndk \
     vendor.qti.hardware.display.snapalloc-impl \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dsp-V1-ndk \
