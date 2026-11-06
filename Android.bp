@@ -711,6 +711,45 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.bluetooth@aidl-impl-qti",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/android.hardware.bluetooth@aidl-impl-qti.so",
+            ],
+            shared_libs: [
+                "android.hardware.bluetooth-V1-ndk",
+                "android.hardware.bluetooth@1.0-impl-qti",
+                "libbase",
+                "libbinder_ndk",
+                "libbtnv",
+                "libcutils",
+                "libdiag",
+                "libhidlbase",
+                "liblog",
+                "libqmi_cci",
+                "libqmiservices",
+                "libsoc_helper",
+                "libutils",
+                "vendor.samsung.hardware.bluetooth-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "samsung",
     strip: {
