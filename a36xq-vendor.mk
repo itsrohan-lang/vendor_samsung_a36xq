@@ -180,15 +180,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a36xq/proprietary/vendor/etc/hyper/config_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_vendor.json \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/android.hardware.bluetooth@aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@aidl-service-qti.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/android.hardware.boot-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.qti.rc \
-    vendor/samsung/a36xq/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/android.hardware.security.keymint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/android.hardware.usb-service.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-service.qti.rc \
-    vendor/samsung/a36xq/proprietary/vendor/etc/init/android.hardware.wifi-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi-service.rc \
-    vendor/samsung/a36xq/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/atrace_categories.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atrace_categories.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/audiohalservice_qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiohalservice_qti.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
@@ -204,7 +201,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/face-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/face-default-sec.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/fingerprint_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint_common.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/hermesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hermesd.rc \
-    vendor/samsung/a36xq/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/hyper-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hyper-default-sec.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/ims-dataservice-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims-dataservice-daemon.rc \
     vendor/samsung/a36xq/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
@@ -1863,7 +1859,6 @@ PRODUCT_PACKAGES += \
     CACertService \
     TimeService \
     TxPwrAdmin \
-    android.hardware.drm-service.clearkey.xml \
     android.hardware.gatekeeper-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.security.keymint-service_V3.xml \
@@ -2009,7 +2004,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
     android.hardware.weaver-service-spu-qti \
     audiohalservice.qti \
-    hostapd \
     macloader \
     mfgloader \
     rild \
@@ -2175,13 +2169,3 @@ PRODUCT_COPY_FILES += \
 # Samsung system protobuf (see the module in Android.bp)
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-6.33.5
-
-# Binaries/libs excluded from Soong due to AIDL version conflicts with Android 15 PixelOS.
-# These declare old AIDL versions (wifi.common-V1, sensors-V2, wifi.supplicant-V3) but
-# PixelOS builds newer source variants that cause "multiple AIDL versions" Soong errors.
-# Installed verbatim from the Samsung vendor image.
-PRODUCT_COPY_FILES += \
-    vendor/samsung/a36xq/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
-    vendor/samsung/a36xq/proprietary/vendor/bin/hw/android.hardware.wifi-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi-service \
-    vendor/samsung/a36xq/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
-    vendor/samsung/a36xq/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey

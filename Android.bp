@@ -30992,15 +30992,6 @@ android_app_import {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.drm-service.clearkey.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.gatekeeper-service.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.xml",
@@ -33697,42 +33688,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libtinyxml2",
                 "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "hostapd",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/hostapd",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libcrypto",
-                "libssl",
-                "libnl",
-                "android.hardware.wifi.hostapd-V2-ndk",
-                "android.hardware.wifi.common-V1-ndk",
-                "libbase",
-                "libutils",
-                "libbinder_ndk",
-                "vendor.samsung.hardware.wifi.hostapd-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
