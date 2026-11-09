@@ -1518,21 +1518,15 @@ PRODUCT_PACKAGES += \
     libaudioeffectoffload_aidl \
     libaudiosaplus_sec \
     libaudiosaplus_sec_aidl \
-    libbundleaidl \
-    libdownmixaidl \
-    libdynamicsprocessingaidl \
     libdynproc \
     libhapticgenerator \
-    libloudnessenhanceraidl \
     libmyspace \
     libmyspace_aidl \
-    libreverbaidl \
     libsamsungSoundbooster_plus \
     libswdap \
     libswdapaidl \
     libswspatializer \
     libswspatializeraidl \
-    libvisualizeraidl \
     unihal_android \
     unihal_cutils \
     unihal_entry \
