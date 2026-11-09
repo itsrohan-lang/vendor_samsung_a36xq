@@ -793,7 +793,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk \
     aidl_libtlc_comm_iccc \
     aidl_libtlc_direct_comm_iccc \
-    android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@aidl-impl-qti \
@@ -1992,7 +1991,7 @@ PRODUCT_PACKAGES += \
     android.hardware.lights-service.samsung \
     android.hardware.nfc-service.nxp \
     android.hardware.power.samsung-service \
-    android.hardware.security.keymint-service \
+    android.hardware.security.keymint-service.samsung \
     android.hardware.weaver-service-spu-qti \
     audiohalservice.qti \
     macloader \

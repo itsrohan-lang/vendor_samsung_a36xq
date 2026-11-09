@@ -606,37 +606,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.bluetooth.audio-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio-V4-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libbluetooth_audio_session_aidl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.bluetooth@1.0-impl-qti",
     owner: "samsung",
     strip: {
@@ -33258,7 +33227,8 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.security.keymint-service",
+    name: "android.hardware.security.keymint-service.samsung",
+    stem: "android.hardware.security.keymint-service",
     owner: "samsung",
     target: {
         android_arm64: {
