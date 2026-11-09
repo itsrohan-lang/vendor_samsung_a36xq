@@ -957,8 +957,6 @@ PRODUCT_PACKAGES += \
     com.qti.chi.override \
     gatekeeper.mdfpp \
     gralloc.default \
-    libaudiocorehal.default \
-    libaudiocorehal.qti \
     libsecaudiohal_aidl \
     local_time.default \
     mapper.qti \
@@ -1042,7 +1040,6 @@ PRODUCT_PACKAGES += \
     libaivideocentral.arcsoft \
     libarcsoft_super_night_auto_raw \
     libaudio_log_utils \
-    libaudioserviceexampleimpl \
     libauto_framing_arcsoft.uniplugin@1.0 \
     libauto_framing_lite.uniplugin@1.0 \
     libautotracking_interface \
