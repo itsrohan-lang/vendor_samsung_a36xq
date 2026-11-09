@@ -960,7 +960,6 @@ PRODUCT_PACKAGES += \
     gralloc.default \
     libaudiocorehal.default \
     libaudiocorehal.qti \
-    libaudioeffecthal.qti \
     libsecaudiohal_aidl \
     local_time.default \
     mapper.qti \
@@ -1044,7 +1043,6 @@ PRODUCT_PACKAGES += \
     libaivideocentral.arcsoft \
     libarcsoft_super_night_auto_raw \
     libaudio_log_utils \
-    libaudioplatformconverter.qti \
     libaudioserviceexampleimpl \
     libauto_framing_arcsoft.uniplugin@1.0 \
     libauto_framing_lite.uniplugin@1.0 \
@@ -2001,7 +1999,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
     android.hardware.power.samsung-service \
     android.hardware.security.keymint-service \
-    android.hardware.sensors-service.multihal \
     android.hardware.weaver-service-spu-qti \
     audiohalservice.qti \
     macloader \

@@ -6123,41 +6123,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudioeffecthal.qti",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/libaudioeffecthal.qti.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.hardware.common-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "libutils",
-                "libtinyxml2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsecaudiohal_aidl",
     owner: "samsung",
     strip: {
@@ -8544,35 +8509,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libexpat",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudioplatformconverter.qti",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudioplatformconverter.qti.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libstagefright_foundation",
-                "android.hardware.audio.core-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libar-pal",
                 "libc++",
                 "libc",
                 "libm",
@@ -33566,43 +33502,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libpuresoftkeymasterdevice",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.sensors-service.multihal",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal",
-            ],
-            shared_libs: [
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "android.hardware.sensors@2.0",
-                "android.hardware.sensors@2.1",
-                "android.hardware.sensors-V2-ndk",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libpower",
-                "libutils",
-                "libbinder_ndk",
-                "libhidlbase",
                 "libc++",
                 "libc",
                 "libm",
