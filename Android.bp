@@ -31764,14 +31764,6 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-sh_binary {
-    name: "samsung.checkpoint_gc",
-    owner: "samsung",
-    src: "proprietary/vendor/bin/checkpoint_gc",
-    filename: "checkpoint_gc",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "chimcxtest",
     owner: "samsung",
