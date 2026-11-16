@@ -30555,7 +30555,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.security.secureclock-service.xml",
+    name: "samsung.android.hardware.security.secureclock-service.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.xml",
     filename_from_src: true,
@@ -30564,7 +30564,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.security.sharedsecret-service.xml",
+    name: "samsung.android.hardware.security.sharedsecret-service.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.xml",
     filename_from_src: true,

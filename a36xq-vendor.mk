@@ -1853,8 +1853,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.security.keymint-service_V3.xml \
-    android.hardware.security.secureclock-service.xml \
-    android.hardware.security.sharedsecret-service.xml \
+    samsung.android.hardware.security.secureclock-service.xml \
+    samsung.android.hardware.security.sharedsecret-service.xml \
     android.hardware.usb-service.qti.xml \
     bluetooth_hci.xml \
     c2_manifest_vendor_audio.xml \
