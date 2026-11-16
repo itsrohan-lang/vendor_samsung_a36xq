@@ -1855,11 +1855,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service_V3.xml \
     android.hardware.security.secureclock-service.xml \
     android.hardware.security.sharedsecret-service.xml \
-    android.hardware.sensors-multihal.xml \
     android.hardware.usb-service.qti.xml \
-    android.hardware.wifi-service.xml \
-    android.hardware.wifi.hostapd.xml \
-    android.hardware.wifi.supplicant.xml \
     bluetooth_hci.xml \
     c2_manifest_vendor_audio.xml \
     cacert-saidl.xml \
@@ -1947,7 +1943,6 @@ PRODUCT_PACKAGES += \
     applypatch \
     athdiag \
     audioflacapp \
-    boringssl_self_test64 \
     btcoex_cont_config \
     cass \
     cdsprpcd \
@@ -1968,7 +1963,6 @@ PRODUCT_PACKAGES += \
     diag_uart_log \
     dlsc \
     dspservice \
-    dumpsys \
     e_loop \
     edgnss-daemon \
     emservice \
@@ -1977,8 +1971,6 @@ PRODUCT_PACKAGES += \
     f2player \
     factory.ssc \
     fsdbg_vendor \
-    getfattr \
-    getopt \
     hcgcd \
     hdcp1prov \
     hdcp2p2prov \
@@ -2067,7 +2059,6 @@ PRODUCT_PACKAGES += \
     sec_log_enabler \
     secril_config_svc \
     sensors.qti \
-    setfattr \
     sg_write_buffer \
     shsusrd \
     sigma_dut \
