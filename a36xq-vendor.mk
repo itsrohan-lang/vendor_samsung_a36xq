@@ -1861,7 +1861,7 @@ PRODUCT_PACKAGES += \
     cacert-saidl.xml \
     converter_manifest.xml \
     drk_manifest.xml \
-    dumpstate-default.xml \
+    samsung.dumpstate-default.xml \
     face-default-sec.xml \
     hyper-default-sec.xml \
     iweaver_aidl_v2_manifest.xml \

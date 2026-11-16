@@ -30627,7 +30627,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "dumpstate-default.xml",
+    name: "samsung.dumpstate-default.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/dumpstate-default.xml",
     filename_from_src: true,
