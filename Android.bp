@@ -15765,7 +15765,6 @@ cc_prebuilt_library_shared {
                 "libqcodec2_platform",
                 "libqcodec2_basecodec",
                 "qti.video.utils.videobufferlayout",
-                "android.hardware.graphics.common-V5-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -23456,12 +23455,12 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-// The Samsung camera blobs in this tree have DT_NEEDED entries for the AOSP AIDL
-// runtime libraries below, which the platform only installs to /system/lib64.
-// Nothing on the vendor side links the AIDL modules themselves (every camera
-// prebuilt that did so mixed interface versions and could not be built), so the
-// stock vendor copies are shipped as plain blobs instead. The sonames are
-// version-frozen, so the stock files are ABI-compatible with the platform ones.
+// Several Samsung vendor blobs in this tree have DT_NEEDED entries for the AOSP
+// AIDL runtime libraries below, which the platform only installs to
+// /system/lib64. Nothing on the vendor side links the AIDL modules themselves
+// (the modules that did either mixed interface versions or were paired with a
+// newer source module), so the stock vendor copies are shipped as plain blobs.
+// The sonames are version-frozen, so the stock files are ABI-compatible.
 cc_prebuilt_library_shared {
     name: "liballocator_v1_stock",
     owner: "samsung",
@@ -23502,6 +23501,33 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.hardware.camera.common-V2-ndk.so",
             ],
             shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgraphics_common_v5_stock",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    stem: "android.hardware.graphics.common-V5-ndk",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.graphics.common-V5-ndk.so",
+            ],
+            shared_libs: [
+                "android.hardware.common-V2-ndk",
                 "libbinder_ndk",
                 "libc++",
                 "libc",

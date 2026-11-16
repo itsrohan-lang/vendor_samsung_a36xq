@@ -1220,6 +1220,7 @@ PRODUCT_PACKAGES += \
     libmapperutils \
     liballocator_v1_stock \
     libcamera_common_v2_stock \
+    libgraphics_common_v5_stock \
     libmctfengine_stub \
     libmdmdetect \
     libmdsprpc \
