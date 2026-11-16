@@ -1529,7 +1529,6 @@ cc_prebuilt_library_shared {
                 "libmapperutils",
                 "libvndksupport",
                 "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.allocator-V1-ndk",
                 "android.hardware.graphics.common@1.1",
                 "libbinder_ndk",
                 "libdisplayconfig.qti",
@@ -5889,7 +5888,6 @@ cc_prebuilt_library_shared {
                 "libgrallocutils",
                 "libmapperutils",
                 "libvndksupport",
-                "android.hardware.graphics.allocator-V1-ndk",
                 "android.hardware.graphics.common@1.1",
                 "libdisplayconfig.qti",
                 "libgralloc.qti",
@@ -9228,7 +9226,6 @@ cc_prebuilt_library_shared {
                 "libmapperutils",
                 "libvndksupport",
                 "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.allocator-V1-ndk",
                 "android.hardware.graphics.common@1.1",
                 "libbinder_ndk",
                 "libdisplayconfig.qti",
@@ -23497,6 +23494,65 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+// The Samsung camera blobs in this tree have DT_NEEDED entries for the AOSP AIDL
+// runtime libraries below, which the platform only installs to /system/lib64.
+// Nothing on the vendor side links the AIDL modules themselves (every camera
+// prebuilt that did so mixed interface versions and could not be built), so the
+// stock vendor copies are shipped as plain blobs instead. The sonames are
+// version-frozen, so the stock files are ABI-compatible with the platform ones.
+cc_prebuilt_library_shared {
+    name: "liballocator_v1_stock",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    stem: "android.hardware.graphics.allocator-V1-ndk",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.graphics.allocator-V1-ndk.so",
+            ],
+            shared_libs: [
+                "android.hardware.common-V2-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_common_v2_stock",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    stem: "android.hardware.camera.common-V2-ndk",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.camera.common-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.camera.postproc@1.0-service-impl",
     owner: "samsung",
@@ -23527,7 +23583,6 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libui",
                 "android.hardware.camera.common-V1-ndk",
-                "android.hardware.camera.common-V2-ndk",
                 "vendor.qti.hardware.camera.postproc-V1-ndk",
                 "camx.device-impl",
                 "android.hardware.camera.device-V1-ndk",
@@ -23542,7 +23597,6 @@ cc_prebuilt_library_shared {
                 "libgrallocutils",
                 "libmapperutils",
                 "libvndksupport",
-                "android.hardware.graphics.allocator-V1-ndk",
                 "android.hardware.graphics.common@1.1",
                 "libdisplayconfig.qti",
                 "libgralloc.qti",
@@ -31834,7 +31888,6 @@ cc_prebuilt_binary {
                 "libgrallocutils",
                 "libmapperutils",
                 "libvndksupport",
-                "android.hardware.graphics.allocator-V1-ndk",
                 "android.hardware.graphics.common@1.1",
                 "libdisplayconfig.qti",
                 "libgralloc.qti",
@@ -31887,7 +31940,6 @@ cc_prebuilt_binary {
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.1",
                 "android.hardware.graphics.allocator-V2-ndk",
-                "android.hardware.graphics.allocator-V1-ndk",
                 "android.hardware.graphics.common@1.1",
                 "libdisplayconfig.qti",
                 "libgralloc.qti",
@@ -32526,7 +32578,6 @@ cc_prebuilt_binary {
                 "libgrallocutils",
                 "libmapperutils",
                 "libvndksupport",
-                "android.hardware.graphics.allocator-V1-ndk",
                 "android.hardware.graphics.common@1.1",
                 "libdisplayconfig.qti",
                 "libgralloc.qti",

@@ -1218,6 +1218,8 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     libmapdata_api \
     libmapperutils \
+    liballocator_v1_stock \
+    libcamera_common_v2_stock \
     libmctfengine_stub \
     libmdmdetect \
     libmdsprpc \
