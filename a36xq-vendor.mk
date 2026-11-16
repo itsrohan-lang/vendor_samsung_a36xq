@@ -1946,7 +1946,7 @@ PRODUCT_PACKAGES += \
     btcoex_cont_config \
     cass \
     cdsprpcd \
-    checkpoint_gc \
+    samsung.checkpoint_gc \
     chimcxtest \
     chiofflinepostproctest \
     cnss-daemon \

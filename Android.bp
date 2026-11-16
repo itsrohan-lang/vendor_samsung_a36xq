@@ -31765,7 +31765,7 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
-    name: "checkpoint_gc",
+    name: "samsung.checkpoint_gc",
     owner: "samsung",
     src: "proprietary/vendor/bin/checkpoint_gc",
     filename: "checkpoint_gc",
