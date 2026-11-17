@@ -782,7 +782,6 @@ PRODUCT_PACKAGES += \
     libmpbase \
     libstagefright_codecbase \
     libstagefright_framecapture_utils \
-    libstagefright_graphicbuffersource_aidl \
     libstagefright_hdcp \
     libstagefright_httplive_sec \
     libstagefright_surface_utils \
