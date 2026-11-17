@@ -1218,9 +1218,6 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     libmapdata_api \
     libmapperutils \
-    liballocator_v1_stock \
-    libcamera_common_v2_stock \
-    libgraphics_common_v5_stock \
     libmctfengine_stub \
     libmdmdetect \
     libmdsprpc \
@@ -1272,7 +1269,6 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libplatformconfig \
     libprofileparamstorage \
-    libprotobuf-cpp-full-21.12 \
     libq-perflog \
     libq3dtools_adreno \
     libqc2audio_base \
@@ -1980,7 +1976,6 @@ PRODUCT_PACKAGES += \
     android.hardware.lights-service.samsung \
     android.hardware.nfc-service.nxp \
     android.hardware.power.samsung-service \
-    android.hardware.security.keymint-service.samsung \
     android.hardware.weaver-service-spu-qti \
     audiohalservice.qti \
     macloader \

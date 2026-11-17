@@ -5801,7 +5801,7 @@ cc_prebuilt_library_shared {
                 "libcamximageformatutils",
                 "libcamxstatscore",
                 "libcamxswispiqmodule",
-                "libprotobuf-cpp-full-21.12",
+                "libprotobuf-cpp-full-21.12-vendorcompat",
                 "libqmi_cci",
                 "libqmi_common_so",
                 "libqmi_encdec",
@@ -7975,7 +7975,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libprotobuf-cpp-full-21.12",
+                "libprotobuf-cpp-full-21.12-vendorcompat",
                 "libutils",
                 "libc++",
                 "libc",
@@ -15117,32 +15117,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-full-21.12",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-full-21.12.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libq-perflog",
     owner: "samsung",
     strip: {
@@ -18277,7 +18251,7 @@ cc_prebuilt_library_shared {
                 "libjsoncpp",
                 "liblog",
                 "libnetutils",
-                "libprotobuf-cpp-full-21.12",
+                "libprotobuf-cpp-full-21.12-vendorcompat",
                 "librilutils",
                 "libril_sem",
                 "libsecnativefeature",
@@ -21595,7 +21569,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-21.12",
+                "libprotobuf-cpp-full-21.12-vendorcompat",
                 "libutils",
                 "liblog",
                 "libcrypto",
@@ -23436,86 +23410,6 @@ cc_prebuilt_library_shared {
 // (the modules that did either mixed interface versions or were paired with a
 // newer source module), so the stock vendor copies are shipped as plain blobs.
 // The sonames are version-frozen, so the stock files are ABI-compatible.
-cc_prebuilt_library_shared {
-    name: "liballocator_v1_stock",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    stem: "android.hardware.graphics.allocator-V1-ndk",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.allocator-V1-ndk.so",
-            ],
-            shared_libs: [
-                "android.hardware.common-V2-ndk",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamera_common_v2_stock",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    stem: "android.hardware.camera.common-V2-ndk",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.camera.common-V2-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgraphics_common_v5_stock",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    stem: "android.hardware.graphics.common-V5-ndk",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.common-V5-ndk.so",
-            ],
-            shared_libs: [
-                "android.hardware.common-V2-ndk",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.camera.postproc@1.0-service-impl",
     owner: "samsung",
@@ -32878,46 +32772,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.security.keymint-service.samsung",
-    stem: "android.hardware.security.keymint-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.security.keymint-service",
-            ],
-            shared_libs: [
-                "libskeymint10device",
-                "vendor.samsung.hardware.keymint-V3-ndk",
-                "android.hardware.security.keymint-V3-ndk",
-                "android.hardware.security.rkp-V3-ndk",
-                "android.hardware.security.sharedsecret-V1-ndk",
-                "android.hardware.security.secureclock-V1-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcppbor",
-                "libcrypto",
-                "libkeymaster_portable",
-                "liblog",
-                "libpuresoftkeymasterdevice",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.weaver-service-spu-qti",
     owner: "samsung",
     target: {
@@ -34960,7 +34814,7 @@ cc_prebuilt_binary {
                 "libselinux",
                 "libshsc",
                 "vendor.qti.hardware.bttpi-V3-ndk",
-                "libprotobuf-cpp-full-21.12",
+                "libprotobuf-cpp-full-21.12-vendorcompat",
                 "libz",
                 "libcrypto",
                 "libssl",
