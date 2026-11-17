@@ -1273,7 +1273,6 @@ PRODUCT_PACKAGES += \
     libplatformconfig \
     libprofileparamstorage \
     libprotobuf-cpp-full-21.12 \
-    libprotobuf-cpp-lite-21.12 \
     libq-perflog \
     libq3dtools_adreno \
     libqc2audio_base \
