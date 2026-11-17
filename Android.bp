@@ -31408,7 +31408,6 @@ cc_prebuilt_binary {
                 "libbase",
                 "libcrypto",
                 "liblog",
-                "libz_stable",
                 "libziparchive",
                 "libc++",
                 "libc",
