@@ -4,6 +4,8 @@
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/a36xq
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    vendor/samsung/a36xq/etc/linker.config.json
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/a36xq/proprietary/odm/etc/apks_count_list.txt:$(TARGET_COPY_OUT_ODM)/etc/apks_count_list.txt \
@@ -324,7 +326,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a36xq/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/samsung/a36xq/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
     vendor/samsung/a36xq/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
-    vendor/samsung/a36xq/proprietary/vendor/etc/linker.config.pb:$(TARGET_COPY_OUT_VENDOR)/etc/linker.config.pb \
     vendor/samsung/a36xq/proprietary/vendor/etc/lm/AppClassifierFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AppClassifierFeature.xml \
     vendor/samsung/a36xq/proprietary/vendor/etc/lm/LightningLaunchesFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/LightningLaunchesFeature.xml \
     vendor/samsung/a36xq/proprietary/vendor/etc/lm/PreKillFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PreKillFeature.xml \

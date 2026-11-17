@@ -1,0 +1,17 @@
+{
+    "provideLibs": [
+        "unihal_uniplugin@1.0.so",
+        "libmpbase.so",
+        "libOpenCL.so",
+        "libOpenCv.camera.samsung.so",
+        "libDLInterface.camera.samsung.so",
+        "libsensorlistener.so",
+        "libsnap_vndk.so",
+        "unihal_android.so",
+        "unihal_cutils.so",
+        "unihal_filter_unit.so",
+        "unihal_scenario.so",
+        "liboemcrypto.so",
+        "libsecril_wrapper.so"
+    ]
+}
