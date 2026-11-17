@@ -1611,7 +1611,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
     vendor.qti.hardware.pal-V1-ndk \
     vendor.qti.hardware.perf2-V1-ndk \
-    vendor.qti.hardware.perf@2.2.system_ext \
     vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qdutils_disp@1.0.system_ext \
     vendor.qti.hardware.qseecom-V1-ndk \
