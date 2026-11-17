@@ -152,139 +152,11 @@ cc_prebuilt_library_shared {
     prefer: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libmedia_codeclist",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libmedia_codeclist.so",
-            ],
-            shared_libs: [
-                "android.hardware.media.omx@1.0",
-                "libaconfig_storage_read_api_cc",
-                "libbinder",
-                "liblog",
-                "libmedia_codeclist_capabilities",
-                "libstagefright_foundation",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmedia_codeclist_capabilities",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libmedia_codeclist_capabilities.so",
-            ],
-            shared_libs: [
-                "libaconfig_storage_read_api_cc",
-                "libbinder",
-                "liblog",
-                "libstagefright_foundation",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
 
 
 
 
 
-
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_codecbase",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_codecbase.so",
-            ],
-            shared_libs: [
-                "android.hardware.cas.native@1.0",
-                "android.hardware.drm@1.0",
-                "libaudioutils",
-                "libgui",
-                "libhidlallocatorutils",
-                "liblog",
-                "libmedia_codeclist",
-                "libmedia_omx",
-                "libstagefright_foundation",
-                "libui",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_framecapture_utils",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_framecapture_utils.so",
-            ],
-            shared_libs: [
-                "libEGL",
-                "libGLESv1_CM",
-                "libGLESv2",
-                "libbase",
-                "libcutils",
-                "libgui",
-                "liblog",
-                "libprocessgroup",
-                "libstagefright_foundation",
-                "libsync",
-                "libui",
-                "libutils",
-                "libvulkan",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
 
 cc_prebuilt_library_shared {
     name: "libstagefright_hdcp",
@@ -343,33 +215,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.cas@1.0",
                 "android.hardware.cas.native@1.0",
                 "android.hidl.allocator@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_surface_utils",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libstagefright_surface_utils.so",
-            ],
-            shared_libs: [
-                "libgui",
-                "liblog",
-                "libui",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
