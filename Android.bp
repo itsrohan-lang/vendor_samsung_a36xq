@@ -21430,30 +21430,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libz_stable_samsung",
-    owner: "samsung",
-    stem: "libz_stable",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libz_stable.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libxml",
     owner: "samsung",
     strip: {
@@ -30393,24 +30369,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "samsung.android.hardware.security.secureclock-service.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "samsung.android.hardware.security.sharedsecret-service.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.usb-service.qti.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb-service.qti.xml",
@@ -31450,7 +31408,7 @@ cc_prebuilt_binary {
                 "libbase",
                 "libcrypto",
                 "liblog",
-                "libz_stable_samsung",
+                "libz_stable",
                 "libziparchive",
                 "libc++",
                 "libc",
