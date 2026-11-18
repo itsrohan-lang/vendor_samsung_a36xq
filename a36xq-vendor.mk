@@ -1516,9 +1516,7 @@ PRODUCT_PACKAGES += \
     libmyspace_aidl \
     libsamsungSoundbooster_plus \
     libswdap \
-    libswdapaidl \
     libswspatializer \
-    libswspatializeraidl \
     unihal_android \
     unihal_cutils \
     unihal_entry \
