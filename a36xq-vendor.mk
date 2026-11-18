@@ -29,7 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a36xq/proprietary/vendor/etc/VslMesDetector/MesDetectorNoise.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/VslMesDetector/MesDetectorNoise.tflite \
     vendor/samsung/a36xq/proprietary/vendor/etc/VslMesDetector/moire_detection.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/VslMesDetector/moire_detection.tflite \
     vendor/samsung/a36xq/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
-    vendor/samsung/a36xq/proprietary/vendor/etc/aconfig_flags.pb:$(TARGET_COPY_OUT_VENDOR)/etc/aconfig_flags.pb \
     vendor/samsung/a36xq/proprietary/vendor/etc/agingconfig.txt:$(TARGET_COPY_OUT_VENDOR)/etc/agingconfig.txt \
     vendor/samsung/a36xq/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml \
     vendor/samsung/a36xq/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs \
