@@ -5635,6 +5635,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.chi.override",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
