@@ -21802,46 +21802,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaudioeffectoffload_aidl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libaudioeffectoffload_aidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libaudioutils",
-                "libbase",
-                "liblog",
-                "libutils",
-                "libsecaudiocoreutils",
-                "libsecaudioinfo",
-                "libaudioaidlcommon",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "libaudio_aidl_conversion_common_ndk",
-                "libnbaio_mono",
-                "libar-pal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaudiosaplus_sec",
     owner: "samsung",
     strip: {
@@ -21857,52 +21817,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libaudioutils",
-                "lib_SoundAlive_play_plus_ver900",
-                "lib_SoundAlive_AlbumArt_ver105",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiosaplus_sec_aidl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libaudiosaplus_sec_aidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libalsautilsv2",
-                "libnbaio_mono",
-                "libmedia_helper",
-                "libstagefright_foundation",
-                "libtinyalsav2",
-                "libxml2",
-                "libaudioaidlcommon",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libaudio_aidl_conversion_common_ndk",
-                "libaudioutils",
-                "libbase",
-                "liblog",
-                "libutils",
                 "lib_SoundAlive_play_plus_ver900",
                 "lib_SoundAlive_AlbumArt_ver105",
                 "libc++",
@@ -21995,51 +21909,6 @@ cc_prebuilt_library_shared {
                 "lib_SoundAlive_3DPosition_ver202",
                 "liblog",
                 "libaudioutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmyspace_aidl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libmyspace_aidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V2-ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libalsautilsv2",
-                "libnbaio_mono",
-                "libmedia_helper",
-                "libstagefright_foundation",
-                "libtinyalsav2",
-                "libxml2",
-                "libaudioaidlcommon",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libaudio_aidl_conversion_common_ndk",
-                "libaudioutils",
-                "libbase",
-                "liblog",
-                "libutils",
-                "lib_SoundAlive_3DPosition_ver202",
                 "libc++",
                 "libc",
                 "libm",

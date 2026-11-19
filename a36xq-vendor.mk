@@ -1507,13 +1507,10 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     service-listener-ext-aidl-V1-ndk \
     libaudioeffectoffload \
-    libaudioeffectoffload_aidl \
     libaudiosaplus_sec \
-    libaudiosaplus_sec_aidl \
     libdynproc \
     libhapticgenerator \
     libmyspace \
-    libmyspace_aidl \
     libsamsungSoundbooster_plus \
     libswdap \
     libswspatializer \
