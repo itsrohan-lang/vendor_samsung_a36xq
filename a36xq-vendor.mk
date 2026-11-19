@@ -2138,4 +2138,3 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-21.12-vendorcompat \
     libprotobuf-cpp-full-6.33.5 \
     libprotobuf-cpp-lite-21.12-vendorcompat \
-    libz_stable_samsung

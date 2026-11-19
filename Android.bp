@@ -30958,35 +30958,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "applypatch",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/applypatch",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcrypto",
-                "liblog",
-                "libziparchive",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-                "libz_stable_samsung",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "athdiag",
     owner: "samsung",
     target: {
@@ -35822,59 +35793,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-lite-21.12-vendorcompat",
-    stem: "libprotobuf-cpp-lite-21.12",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-lite-21.12.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libprotobuf-cpp-full-21.12-vendorcompat",
-    stem: "libprotobuf-cpp-full-21.12",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libprotobuf-cpp-full-21.12.so",
-            ],
-            shared_libs: [
-                "libz",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libprotobuf-cpp-full-6.33.5",
     owner: "samsung",
     strip: {
@@ -35898,28 +35816,4 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libz_stable_samsung",
-    stem: "libz_stable",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libz_stable.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
 }
