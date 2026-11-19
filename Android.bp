@@ -15492,10 +15492,15 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-                "android.hardware.graphics.common-V5-ndk",
             ],
         },
     },
+    // This prebuilt needs android.hardware.graphics.common-V5-ndk at runtime
+    // (see DT_NEEDED), while libcodec2_vndk pulls in V7 through libgralloctypes.
+    // Listing V5 here makes Soong complain about two versions of the same
+    // aidl_interface, so V5 is only installed via PRODUCT_PACKAGES in device.mk
+    // and the ELF check is skipped for this prebuilt.
+    check_elf_files: false,
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
