@@ -2131,3 +2131,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a36xq/proprietary/vendor/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml \
     vendor/samsung/a36xq/proprietary/vendor/etc/permissions/vendor.samsung.hardware.telephony.satellite.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.samsung.hardware.telephony.satellite.xml
 
+
+# Libraries the stock firmware ships that the platform build does not provide
+# under the sonames the vendor blobs link against.
+PRODUCT_PACKAGES += \
+    android.hardware.camera.common-V2-ndk \
+    libprotobuf-cpp-full-21.12-vendorcompat \
+    libprotobuf-cpp-full-6.33.5 \
+    libprotobuf-cpp-lite-21.12-vendorcompat \
+    libz_stable_samsung

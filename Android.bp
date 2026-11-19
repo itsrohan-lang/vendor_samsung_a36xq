@@ -1323,6 +1323,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "android.hardware.graphics.allocator-V1-ndk",
             ],
         },
     },
@@ -8994,6 +8995,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "android.hardware.graphics.allocator-V1-ndk",
             ],
         },
     },
@@ -15490,6 +15492,7 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "android.hardware.graphics.common-V5-ndk",
             ],
         },
     },
@@ -23018,6 +23021,8 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+                "android.hardware.camera.common-V2-ndk",
+                "android.hardware.graphics.allocator-V1-ndk",
             ],
         },
     },
@@ -28410,7 +28415,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full",
+                "libprotobuf-cpp-full-6.33.5",
                 "libcutils",
                 "liblog",
                 "libhidlbase",
@@ -30965,6 +30970,7 @@ cc_prebuilt_binary {
                 "libc",
                 "libm",
                 "libdl",
+                "libz_stable_samsung",
             ],
         },
     },
@@ -31139,6 +31145,7 @@ cc_prebuilt_binary {
                 "com.qti.feature2.hdr",
                 "com.qti.feature2.mcreprocrt",
                 "com.qti.chi.override",
+                "android.hardware.graphics.allocator-V1-ndk",
                 "android.hardware.graphics.allocator-V2-ndk",
                 "libbinder_ndk",
                 "libbitmlenginev2",
@@ -31216,6 +31223,7 @@ cc_prebuilt_binary {
                 "libdl",
                 "libc",
                 "libm",
+                "android.hardware.graphics.allocator-V1-ndk",
             ],
         },
     },
@@ -31823,6 +31831,7 @@ cc_prebuilt_binary {
                 "libdl",
                 "libc",
                 "libm",
+                "android.hardware.graphics.allocator-V1-ndk",
             ],
         },
     },
@@ -35808,3 +35817,130 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-lite-21.12-vendorcompat",
+    stem: "libprotobuf-cpp-lite-21.12",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libprotobuf-cpp-lite-21.12.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-full-21.12-vendorcompat",
+    stem: "libprotobuf-cpp-full-21.12",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libprotobuf-cpp-full-21.12.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libprotobuf-cpp-full-6.33.5",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libprotobuf-cpp-full-6.33.5.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.camera.common-V2-ndk",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.camera.common-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libz_stable_samsung",
+    stem: "libz_stable",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libz_stable.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
