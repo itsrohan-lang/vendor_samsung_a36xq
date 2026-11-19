@@ -5666,7 +5666,7 @@ cc_prebuilt_library_shared {
                 "libchilog",
                 "vendor.qti.hardware.camera.postproc@1.0-service-impl",
                 "libbase",
-                "libsensorndkbridge_samsung",
+                "libsensorndkbridge",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.1",
                 "libdmabufheap",
@@ -11700,7 +11700,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libfloatingfeature",
-                "libsensorndkbridge_samsung",
+                "libsensorndkbridge",
                 "libc++",
                 "libc",
                 "libm",
@@ -18524,7 +18524,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "libutils",
-                "libsensorndkbridge_samsung",
+                "libsensorndkbridge",
                 "liblog",
                 "libhardware",
                 "libc++",
@@ -18546,8 +18546,14 @@ cc_prebuilt_library_shared {
 // libsensorlistener) link against them, and bionic resolves eagerly, so the
 // AOSP build of this library -- which does not export them -- makes those
 // blobs fail to load. Ship the stock blob under its expected file name.
+//
+// The module deliberately keeps the platform module's declared name: Soong
+// turns a prebuilt named <foo> into prebuilt_<foo> and pairs it with the
+// source module <foo>. With prefer: true the prebuilt wins and the source is
+// hidden from make, so frameworks/hardware/interfaces' copy stops emitting an
+// install rule for the same vendor/lib64/libsensorndkbridge.so.
 cc_prebuilt_library_shared {
-    name: "libsensorndkbridge_samsung",
+    name: "libsensorndkbridge",
     owner: "samsung",
     strip: {
         none: true,
@@ -18561,6 +18567,7 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     stem: "libsensorndkbridge",
+    prefer: true,
     soc_specific: true,
     // The blob links android.frameworks.sensorservice-V1-ndk (which pulls
     // sensors V3-ndk in this ROM) and android.hardware.sensors-V2-ndk at the
@@ -22076,7 +22083,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhardware",
                 "libgrallocusage",
-                "libsensorndkbridge_samsung",
+                "libsensorndkbridge",
                 "libcamera_metadata",
                 "libsync",
                 "android.hardware.graphics.allocator@2.0",
@@ -31139,7 +31146,7 @@ cc_prebuilt_binary {
                 "libui",
                 "vendor.qti.hardware.camera.postproc@1.0-service-impl",
                 "libbase",
-                "libsensorndkbridge_samsung",
+                "libsensorndkbridge",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.1",
                 "libdmabufheap",
@@ -31799,7 +31806,7 @@ cc_prebuilt_binary {
                 "libui",
                 "libtinyxml2",
                 "libbase",
-                "libsensorndkbridge_samsung",
+                "libsensorndkbridge",
                 "vendor.qti.hardware.camera.postproc@1.0-service-impl",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.1",
