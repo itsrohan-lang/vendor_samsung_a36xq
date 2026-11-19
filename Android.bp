@@ -34828,6 +34828,12 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+    // sigma_dut links libwifi-hal-qcom.so, but this tree does not ship that
+    // library (vendor/lib64/libwifi-hal-qcom.so is negated in
+    // device_samsung_a36xq/proprietary-files.txt), so Soong has no installed
+    // file to pass to check_elf_file. sigma_dut is a factory test binary and
+    // only opens the HAL at runtime.
+    check_elf_files: false,
 }
 
 cc_prebuilt_binary {
