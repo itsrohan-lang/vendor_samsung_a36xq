@@ -1323,7 +1323,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-                "android.hardware.graphics.allocator-V1-ndk",
             ],
         },
     },
@@ -1331,6 +1330,7 @@ cc_prebuilt_library_shared {
     relative_install_path: "camera/components",
     prefer: true,
     soc_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -8995,13 +8995,13 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-                "android.hardware.graphics.allocator-V1-ndk",
             ],
         },
     },
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -23021,14 +23021,13 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-                "android.hardware.camera.common-V2-ndk",
-                "android.hardware.graphics.allocator-V1-ndk",
             ],
         },
     },
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -31145,7 +31144,6 @@ cc_prebuilt_binary {
                 "com.qti.feature2.hdr",
                 "com.qti.feature2.mcreprocrt",
                 "com.qti.chi.override",
-                "android.hardware.graphics.allocator-V1-ndk",
                 "android.hardware.graphics.allocator-V2-ndk",
                 "libbinder_ndk",
                 "libbitmlenginev2",
@@ -31178,6 +31176,7 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_binary {
@@ -31223,7 +31222,6 @@ cc_prebuilt_binary {
                 "libdl",
                 "libc",
                 "libm",
-                "android.hardware.graphics.allocator-V1-ndk",
             ],
         },
     },
@@ -31233,6 +31231,7 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_binary {
@@ -31831,7 +31830,6 @@ cc_prebuilt_binary {
                 "libdl",
                 "libc",
                 "libm",
-                "android.hardware.graphics.allocator-V1-ndk",
             ],
         },
     },
@@ -31841,6 +31839,7 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_binary {
