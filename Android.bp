@@ -21813,6 +21813,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/soundfx/libaudioeffectoffload_aidl.so",
             ],
             shared_libs: [
+                "android.hardware.audio.effect-V2-ndk",
+                "android.media.audio.common.types-V3-ndk",
                 "libaudioutils",
                 "libbase",
                 "liblog",
@@ -21882,6 +21884,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/soundfx/libaudiosaplus_sec_aidl.so",
             ],
             shared_libs: [
+                "android.hardware.audio.effect-V2-ndk",
+                "android.media.audio.common.types-V3-ndk",
                 "libalsautilsv2",
                 "libnbaio_mono",
                 "libmedia_helper",
@@ -22016,6 +22020,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/soundfx/libmyspace_aidl.so",
             ],
             shared_libs: [
+                "android.hardware.audio.effect-V2-ndk",
+                "android.media.audio.common.types-V3-ndk",
                 "libalsautilsv2",
                 "libnbaio_mono",
                 "libmedia_helper",
