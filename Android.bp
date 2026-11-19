@@ -5666,7 +5666,7 @@ cc_prebuilt_library_shared {
                 "libchilog",
                 "vendor.qti.hardware.camera.postproc@1.0-service-impl",
                 "libbase",
-                "libsensorndkbridge",
+                "libsensorndkbridge_samsung",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.1",
                 "libdmabufheap",
@@ -7385,6 +7385,11 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+    // Samsung ships this blob under a different name than its DT_SONAME
+    // (libQnnCpu.so), and no module links it by soname -- it is opened by
+    // file name at runtime, exactly as on the stock image. The soname check
+    // compares DT_SONAME against the installed file name, so it cannot pass.
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -7409,6 +7414,11 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+    // Samsung ships this blob under a different name than its DT_SONAME
+    // (libQnnGpu.so), and no module links it by soname -- it is opened by
+    // file name at runtime, exactly as on the stock image. The soname check
+    // compares DT_SONAME against the installed file name, so it cannot pass.
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -10839,6 +10849,11 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+    // Samsung ships this blob under a different name than its DT_SONAME
+    // (libfidoauthnr_arm64.so), and no module links it by soname -- it is
+    // opened by file name at runtime, exactly as on the stock image. The check
+    // compares DT_SONAME against the installed file name, so it cannot pass.
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -11685,7 +11700,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libfloatingfeature",
-                "libsensorndkbridge",
+                "libsensorndkbridge_samsung",
                 "libc++",
                 "libc",
                 "libm",
@@ -18509,7 +18524,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "libutils",
-                "libsensorndkbridge",
+                "libsensorndkbridge_samsung",
                 "liblog",
                 "libhardware",
                 "libc++",
@@ -18524,9 +18539,35 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-// libsensorndkbridge: removed from Soong - prebuilt declares android.hardware.sensors-V2-ndk
-// but android.frameworks.sensorservice-V1-ndk transitively pulls V3-ndk (PixelOS Android 15).
-// Installed as PRODUCT_COPY_FILES via proprietary-files.txt (-prefix).
+// Samsung builds the sensors NDK bridge with three extra camera looper
+// entry points: ALooper_forCamera, ALooper_pollOnce_camera and
+// ALooper_release_forCamera. The QTI camera provider (com.qti.chi.override)
+// and the Samsung camera blobs (unihal_android, libhypermotion_core,
+// libsensorlistener) link against them, and bionic resolves eagerly, so the
+// AOSP build of this library -- which does not export them -- makes those
+// blobs fail to load. Ship the stock blob under its expected file name.
+cc_prebuilt_library_shared {
+    name: "libsensorndkbridge_samsung",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsensorndkbridge.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    stem: "libsensorndkbridge",
+    soc_specific: true,
+    // The blob links android.frameworks.sensorservice-V1-ndk (which pulls
+    // sensors V3-ndk in this ROM) and android.hardware.sensors-V2-ndk at the
+    // same time, a combination Soong refuses to put in one dependency graph.
+    // Both are installed by device.mk and resolved at runtime instead.
+    check_elf_files: false,
+}
 
 cc_prebuilt_library_shared {
     name: "libsensorslog",
@@ -22035,7 +22076,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhardware",
                 "libgrallocusage",
-                "libsensorndkbridge",
+                "libsensorndkbridge_samsung",
                 "libcamera_metadata",
                 "libsync",
                 "android.hardware.graphics.allocator@2.0",
@@ -31098,7 +31139,7 @@ cc_prebuilt_binary {
                 "libui",
                 "vendor.qti.hardware.camera.postproc@1.0-service-impl",
                 "libbase",
-                "libsensorndkbridge",
+                "libsensorndkbridge_samsung",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.1",
                 "libdmabufheap",
@@ -31758,7 +31799,7 @@ cc_prebuilt_binary {
                 "libui",
                 "libtinyxml2",
                 "libbase",
-                "libsensorndkbridge",
+                "libsensorndkbridge_samsung",
                 "vendor.qti.hardware.camera.postproc@1.0-service-impl",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.1",

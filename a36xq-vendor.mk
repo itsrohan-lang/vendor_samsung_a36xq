@@ -1388,6 +1388,7 @@ PRODUCT_PACKAGES += \
     libsehbluetooth_audio_session_aidl \
     libsemnativecarrierfeature \
     libsensorlistener \
+    libsensorndkbridge_samsung \
     libsensorslog \
     libsfeShiftExtrapolation \
     libsfp_sensor \
