@@ -946,7 +946,6 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno.egl \
     libq3dtools_esx \
     android.hardware.renderscript@1.0-impl \
-    audio.bluetooth.default \
     audio.bluetooth_qti.default \
     audio.primary.default \
     audio.r_submix.default \
@@ -1478,7 +1477,6 @@ PRODUCT_PACKAGES += \
     libvkmanager_vendor \
     libvkservice \
     libvmfilexfer \
-    libwifi-hal \
     libwifiobserver \
     libwpa_client \
     libwpa_drv_oem \
@@ -1825,7 +1823,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-V2-ndk \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal@1.0 \
-    com.android.hardware.cas.lazy \
     com.google.android.widevine.nonupdatable \
     com.samsung.android.authfw.ta.preload \
     com.samsung.android.biometrics.face.signed \

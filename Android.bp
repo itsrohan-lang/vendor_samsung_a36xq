@@ -613,6 +613,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.eeprom.gt24p128c2csli_imx766",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -650,6 +651,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.eeprom.irs2381c_polar",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -687,6 +689,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.eeprom.sec2qcconversion",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -724,6 +727,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.eeprom.truly_cmb433",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -761,6 +765,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.flash.lm3644",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -798,6 +803,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.samsung.ois.mcu_stm32g",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -835,6 +841,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.samsung.sensor.gc05a3",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -872,6 +879,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.samsung.sensor.gc08a3",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -909,6 +917,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.samsung.sensor.gc12a2",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -946,6 +955,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.samsung.sensor.imx882",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -983,6 +993,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.bots.node.vendortagwrite",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1022,6 +1033,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.camx.chiiqutils",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1064,6 +1076,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.eisv2",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1094,6 +1107,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.eisv3",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1124,6 +1138,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.hvx.addconstant",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1151,6 +1166,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.hvx.binning",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1178,6 +1194,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.afbfusion",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1209,6 +1226,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.customhwnode",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1240,6 +1258,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.depth",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1335,6 +1354,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.dummydepth",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1366,6 +1386,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.dummyrtb",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1396,6 +1417,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.dummysat",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1426,6 +1448,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.eisv2",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1468,6 +1491,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.eisv3",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1510,6 +1534,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.fcv",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1543,6 +1568,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.formatconversion",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1573,6 +1599,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.gme",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1615,6 +1642,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.gpu",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1648,6 +1676,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.gyrornn",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1690,6 +1719,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.hdr10pgen",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1733,6 +1763,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.hdr10phist",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1775,6 +1806,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.memcpy",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1805,6 +1837,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.ml",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1848,6 +1881,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.mlinference",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1890,6 +1924,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.muxer",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1920,6 +1955,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.remosaic",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1950,6 +1986,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.stich",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -1980,6 +2017,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.sw2dlut",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2016,6 +2054,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swaidenoiser",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2052,6 +2091,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swbestats",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2088,6 +2128,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swcac",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2119,6 +2160,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swec",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2161,6 +2203,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swfusion",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2197,6 +2240,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swhme",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2234,6 +2278,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swlsc",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2270,6 +2315,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swmctf",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2306,6 +2352,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swmfnr",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2343,6 +2390,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swpdpc",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2379,6 +2427,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swpreprocess",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2409,6 +2458,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swregistration",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2449,6 +2499,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.node.swvrt",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2485,6 +2536,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.aec",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2516,6 +2568,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.aecwrapper",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2546,6 +2599,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.aecxcore",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2578,6 +2632,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.af",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2609,6 +2664,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.afd",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2639,6 +2695,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.afwrapper",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2669,6 +2726,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.asd",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2699,6 +2757,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.awb",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2730,6 +2789,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.awbwrapper",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2760,6 +2820,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.cnndriver",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2798,6 +2859,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.haf",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2829,6 +2891,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.hafoverride",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2859,6 +2922,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.localhistogram",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2889,6 +2953,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.pdlib",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2919,6 +2984,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.pdlibsony",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2949,6 +3015,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.pdlibwrapper",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -2979,6 +3046,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.statsgenerator",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3009,6 +3077,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qti.stats.tracker",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3042,6 +3111,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qtistatic.stats.aec",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3073,6 +3143,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qtistatic.stats.af",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3104,6 +3175,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qtistatic.stats.awb",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3135,6 +3207,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.qtistatic.stats.pdlib",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3166,6 +3239,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.samsung.node.realtimebokeh",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3199,6 +3273,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.samsung.node.uniplugin_capture",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3233,6 +3308,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.samsung.node.uniplugin_preview",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3267,6 +3343,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.samsung.node.uniplugin_recording",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3301,6 +3378,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.samsung.node.uniplugin_vdis",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3335,6 +3413,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.ss.stats.aec",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3369,6 +3448,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.ss.stats.af",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3400,6 +3480,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.ss.stats.awb",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3431,6 +3512,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "com.ss.stats.pdlib",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -3462,6 +3544,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libdepthmapwrapper_secure",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -16855,6 +16938,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libqti-perfd",
+    check_elf_files: false,
     owner: "samsung",
     strip: {
         none: true,
@@ -21077,38 +21161,6 @@ cc_prebuilt_library_shared {
                 "libdisplaydebug",
                 "libqrtr",
                 "libmemutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwifi-hal",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwifi-hal.so",
-            ],
-            shared_libs: [
-                "libcld80211",
-                "libcrypto",
-                "libpasn",
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libnl",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -29790,14 +29842,6 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_apex {
-    name: "com.android.hardware.cas.lazy",
-    owner: "samsung",
-    src: "proprietary/vendor/apex/com.android.hardware.cas.lazy.apex",
-    filename: "com.android.hardware.cas.lazy.apex",
-    soc_specific: true,
-}
-
-prebuilt_apex {
     name: "com.google.android.widevine.nonupdatable",
     owner: "samsung",
     src: "proprietary/vendor/apex/com.google.android.widevine.nonupdatable.apex",
@@ -32601,6 +32645,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "vendor.qti.hardware.perf2-hal-service",
+    check_elf_files: false,
     owner: "samsung",
     target: {
         android_arm64: {
