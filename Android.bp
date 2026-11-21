@@ -35862,3 +35862,179 @@ cc_prebuilt_library_shared {
     prefer: true,
     system_ext_specific: true,
 }
+
+// The CAF display binaries link these AIDL NDK backends, but the generated
+// libraries are build-time-only modules and are never installed.  Restore the
+// stock blobs under distinct module names with their original filenames.
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.display.composer3-V3-ndk.samsung",
+    stem: "vendor.qti.hardware.display.composer3-V3-ndk",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.display.composer3-V3-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.graphics.composer3-V3-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    check_elf_files: false,
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.display.demura-V1-ndk.samsung",
+    stem: "vendor.qti.hardware.display.demura-V1-ndk",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.display.demura-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    check_elf_files: false,
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+// AOSP's keymint reference service runs the TA in-process and cannot talk to
+// Samsung's TEE.  Keep the stock TEE-backed service, under a distinct module
+// name so it does not collide with the platform's keymint-service module.
+cc_prebuilt_binary {
+    name: "android.hardware.security.keymint-service.samsung",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.security.keymint-service",
+            ],
+            shared_libs: [
+                "libskeymint10device",
+                "vendor.samsung.hardware.keymint-V3-ndk",
+                "android.hardware.security.keymint-V3-ndk",
+                "android.hardware.security.rkp-V3-ndk",
+                "android.hardware.security.sharedsecret-V1-ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcppbor",
+                "libcrypto",
+                "libkeymaster_portable",
+                "liblog",
+                "libpuresoftkeymasterdevice",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    check_elf_files: false,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+// The CAF nqnfcinfo source needs a kernel UAPI header that this ROM's kernel
+// headers do not expose.  Keep the stock binary under a distinct module name.
+cc_prebuilt_binary {
+    name: "nqnfcinfo.samsung",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/nqnfcinfo",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    check_elf_files: false,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+// The CAF bootctrl tree only exports this as a filegroup, not an installable
+// module; keep Samsung's fragment so the boot HAL is declared in VINTF.
+prebuilt_etc_xml {
+    name: "a36xq-boot-service.qti.xml",
+    owner: "samsung",
+    src: "proprietary/vendor/etc/vintf/manifest/boot-service.qti.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+// The CAF boot-control HAL tree is not part of PRODUCT_SOONG_NAMESPACES for
+// this device, so no source module provides this service.
+cc_prebuilt_binary {
+    name: "android.hardware.boot-service.qti.samsung",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.boot-service.qti",
+            ],
+            shared_libs: [
+                "liblog",
+                "libboot_control_qti",
+                "libbase",
+                "libbinder_ndk",
+                "android.hardware.boot-V1-ndk",
+                "android.hardware.boot@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    check_elf_files: false,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
